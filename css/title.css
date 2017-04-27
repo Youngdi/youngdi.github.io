@@ -62,7 +62,7 @@ header {
 }
 @media screen and (max-width: 479px) {
   header span {
-      font-size: 20px;
+      font-size: 24px;
       color: #FFF;
       -webkit-animation: titleShow 0.25s cubic-bezier(0.25, 0.1, 0.25, 1) both;
               animation: titleShow 0.25s cubic-bezier(0.25, 0.1, 0.25, 1) both;
