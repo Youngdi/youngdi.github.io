@@ -1,0 +1,30 @@
+/*** Start CSS markup ***/
+.tip  {
+    display:inline-block;
+    width:105px;
+    height:105px;
+}
+.coin {
+    width: 100px;
+    height: 100px;
+    margin:0 auto;
+    float:right;
+    background: url(https://mfcpro.files.wordpress.com/2016/06/mfc_coin2.png);
+    background-position:left 0;animation: none;background-repeat:repeat-y;
+}
+.tip .coin  {
+    width: 100px;
+    height: 100px;
+    margin:0 auto;
+    float:right;
+    background: url(https://mfcpro.files.wordpress.com/2016/06/mfc_coin2.png);
+    background-position:left 0;
+    animation: coins 2.33s steps(30) infinite;
+    background-repeat:repeat-y;
+}
+@keyframes coins {100% { background-position:0 -3000px; }}
+@-moz-keyframes coins {100% { background-position:0 -3000px; }}
+@-ms-keyframes coins {100% { background-position:0 -3000px; }}
+@-o-keyframes coins {100% { background-position:0 -3000px; }}
+@-webkit-keyframes coins {100% { background-position:0 -3000px; }}
+/***End CSS markup ***/

@@ -1,0 +1,49 @@
+.container {-webkit-perspective: 1000px;  width: 245px; height: 342px; margin: 30px auto;}
+.card {
+  
+  width: 245px; height: 342px;
+  position: relative;
+  -webkit-transform: rotateY(180deg);
+  -webkit-transform-style: preserve-3d;
+  -webkit-animation: spin 5s linear infinite;
+  background: #444;
+  border-radius: 10px;
+  
+}
+
+body {
+  background: #bbb;
+}
+
+.face {
+  width: 245px; height: 342px;
+  position: absolute;
+}
+.front {width: 245px; height: 342px; box-shadow: 0px 0px 100px 10px white; }
+.back {
+  width: 245px; height: 342px;
+ background:url('../images/baker.jpg');
+  -webkit-transform: translateZ(-3px) rotateY(180deg);
+  background-size: cover;
+  border-radius: 11px;
+}
+
+
+.hit {
+  background: url('../images/1.jpg')
+}
+.gen {
+  background: url('http://940ee6dce6677fa01d25-0f55c9129972ac85d6b1f4e703468e6b.r99.cf2.rackcdn.com/products/pictures/149065.jpg');
+  background-size: cover;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotateY(0deg)
+  }
+  
+  100% {
+    -webkit-transform: rotateY(360deg);
+  }
+}
+
