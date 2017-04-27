@@ -1,384 +1,146 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
-
+<!doctype html>
+<html>
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Happy Valentine's Day to my sweetie, Olivia</title>
-    <style type="text/css">
-    @font-face {
-        font-family: digit;
-        src: url('digital-7_mono.ttf') format("truetype");
-    }
-    </style>
-    <link href="css/default.css" type="text/css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-    <script type="text/javascript" src="js/garden.js"></script>
-    <script type="text/javascript" src="js/functions.js"></script>
+<meta charset="UTF-8">
+<title>抽抽樂</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/plugins/CSSPlugin.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/easing/EasePack.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenLite.min.js"></script>
+<link rel="stylesheet" href="./css/bar.css">
+<link rel="stylesheet" href="./css/stopButton.css">
+<link rel="stylesheet" href="./css/title.css">
+<style>
+body{
+	margin: auto;
+	background: #222;
+}
+.slotMachine{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: Center;
+	align-items: Center;
+}
+.start{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  cursor: all-scroll;
+}
+.disabledButton
+{
+  background-color:gray;
+  cursor: not-allowed !important;
+  pointer-events: none !important;
+}
+.stop {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  cursor: all-scroll;
+}
+#circle{
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	height: 600px;
+}
+#circle div img{
+	width: 100%;
+    height: 100%;
+	flex: 0 1 calc(20%);
+	border-radius:50%;
+}
+#circle div{
+	width: 95px;
+    height: 95px;
+	font-size: 12px;
+	/*margin: 15px;*/
+}
+#reel{
+	width: 300px;
+    height: 300px;
+	border-radius:50%;
+	margin: 15px;
+	background-color: gray;
+}
+
+.colorRed{
+	background-color: #F00;
+}
+#viewbox {
+	margin:50px;
+    overflow: hidden;
+    width: 295px;
+    height: 295px;
+	border-radius:50%;
+    position: relative;
+}
+#viewbox .wrapper {
+    position: relative;
+}
+#viewbox img {
+    width: 100%;
+    height: 100%;
+	border-radius:50%;
+}
+#baker{
+	width: 295px !important;
+	height: 295px !important;
+}
+</style>
+
 </head>
 
 <body>
-    <div id="mainDiv">
-        <div id="content">
-            <div id="code">
-                <span class="comments">/**</span>
-                <br />
-                <span class="space" /><span class="comments">*2016—09-28,</span>
-                <br />
-                <span class="space" /><span class="comments">*2016-10-11.</span>
-                <br />
-                <span class="space" /><span class="comments">*/</span>
-                <br /> Boy name = <span class="keyword">Mr</span> Bill
-                <br /> Girl name = <span class="keyword">Mrs</span> Olivia
-                <br />
-                <span class="comments">// Fall in love river. </span>
-                <br /> The boy love the girl;
-                <br />
-                <span class="comments">// They love each other.</span>
-                <br /> The girl loved the boy;
-                <br />
-                <span class="comments">// AS time goes on.</span>
-                <br /> The boy can not be separated the girl;
-                <br />
-                <span class="comments">// At the same time.</span>
-                <br /> The girl can not be separated the boy;
-                <br />
-                <span class="comments">// The Boy want to tell girl.</span>
-                <br /> How our <span class="keyword"> love </span> come to be
-                <br />
-                <span class="keyword">No one knows</span>
-                <br /> Neither of us realized
-                <br /> How it kept on to grow
-                <br /> It has come to <span class="keyword">this day</span>
-                <br /> When our <span class="keyword"> hearts </span> are in <span class="keyword"> sync </span>
-                <br /> Baby anything you ask me to <br />
-                <span class="keyword">I'll do in a blink...</span>
-                <br />
-                <br>
-                <br> I want to say:
-                <br />
-                <span class="keyword">Sweetie, I love you forever;</span>
-                <br />
-            </div>
-            <div id="loveHeart">
-                <canvas id="garden"></canvas>
-                <div id="words">
-                    <div id="messages">
-                        親愛的，這是我們相愛在一起的時光。
-                        <div id="elapseClock"></div>
-                    </div>
-                    <div id="loveu">
-                        愛你直到永永遠遠。
-                        <br/>
-                        <div class="signature">- 楊祐誠</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <svg id="owl" class="svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 800 800" style="enable-background:new 0 0 800 800;" xml:space="preserve">
-            <g id="object">
-                <ellipse class="st7" cx="408.3" cy="620.2" rx="119.9" ry="14.8" />
-                <g>
-                    <g>
-                        <path class="st6" d="M392.4,604.7c-0.6-1.5-2.5-2.7-4.2-2.7l-22.7,0.5c-1.6,0-4.3,0.5-5.8,1.1l-12.9,4.8
-				c-1.5,0.6-1.5,1.2,0.2,1.4l17.4,1.9c1.6,0.2,3.5,1.6,4.1,3.1l1.1,2.9c0.6,1.5,2.2,2,3.6,1.1l8.3-5.7c1.4-0.9,3.6-1,5-0.2l10,6.1
-				c1.4,0.9,2,0.3,1.4-1.2L392.4,604.7z" />
-                        <path class="st6" d="M470.2,616.2l-7.2-11.7c-0.9-1.4-2.9-2.3-4.5-1.9l-19,4.3c-1.6,0.4-4,1.4-5.4,2.3l-9.8,6.5
-				c-1.4,0.9-1.1,1.6,0.5,1.4l14.8-1.1c1.6-0.1,3.7,0.9,4.5,2.4l1.5,2.6c0.8,1.4,2.4,1.6,3.5,0.3l5.8-6.7c1.1-1.2,3.2-1.7,4.7-1.1
-				l9.4,4C470.6,618.2,471.1,617.6,470.2,616.2z" />
-                    </g>
-                    <path class="st6" d="M447.9,402.6c-24.5,0-31.3,13.8-32.4,35.5c-3.6-21.7-13.1-35.5-37.6-35.5c-44.6,0-80.7,45.1-80.7,100.8
-			c0,42.8,10.4,81.5,53.8,95.5c12.4-1,19.3-7,29.5-7c20.9,0,30.3-7.1,34.3-20.3c2,13.2,9.4,20.3,30.3,20.3c10.3,0,17.2,6,29.5,7
-			c41.9-20.2,53.8-52.6,53.8-95.5C528.6,447.8,492.5,402.6,447.9,402.6z M417.4,503.9c0-0.9,0-1.9,0-2.8
-			C417.4,502,417.4,503,417.4,503.9c0,0.8,0,1.7,0,2.5C417.4,505.6,417.4,504.7,417.4,503.9z" />
-                    <path class="st8" d="M469.7,602.2c2.5-1.1,4.2-2.3,5.1-3.3c18.3-20.2,71.2-83.3,48-136.3c-9.5-21.6-18-57.7-47.5-75.2
-			c-7.5,12.5-19.1,14-19.1,14s-25.6-5.9-43-6c0,0,0,0,0,0c-0.1,0-0.2,0-0.3,0c-0.1,0-0.2,0-0.3,0c0,0,0,0,0,0c-17.4,0.1-43,6-43,6
-			s-11.6-1.5-19.1-14c-29.5,17.5-38,53.6-47.5,75.2c-23.2,52.9,34.9,128.2,48,136.3c6.5,4,34.9,12.4,63.8,12.2
-			C437.7,610.9,459.6,606.7,469.7,602.2" />
-                    <circle class="st5" cx="360.4" cy="477.6" r="52.7" />
-                    <circle class="st5" cx="463.9" cy="477.6" r="52.7" />
-                    <g>
-                        <circle class="st9" cx="453.9" cy="477.6" r="42.7" />
-                        <g>
-                            <circle class="st10 eye" cx="453.9" cy="477.6" r="26.3" />
-                            <circle class="st11 eye" cx="453.9" cy="477.6" r="14.9" />
-                            <circle class="st10 eye" cx="461.4" cy="466.6" r="8.3" />
-                        </g>
-                    </g>
-                    <g>
-                        <circle class="st9" cx="370.4" cy="477.6" r="42.7" />
-                        <g>
-                            <circle class="st10 eye" cx="370.4" cy="477.6" r="26.3" />
-                            <circle class="st11 eye" cx="370.4" cy="477.6" r="14.9" />
-                            <circle class="st10 eye" cx="377.9" cy="466.6" r="8.3" />
-                        </g>
-                    </g>
-                    <path class="st11" d="M402.2,489.6c0,0,5.3-4,12.7-4c7.3,0,12.7,4,12.7,4s-8.3,22.7-12.7,22.7S402.2,489.6,402.2,489.6z" />
-                    <g>
-                        <circle class="st5" cx="383.7" cy="550.5" r="8.1" />
-                        <circle class="st5" cx="403.7" cy="570.5" r="8.1" />
-                        <circle class="st5" cx="418" cy="542.4" r="8.1" />
-                        <circle class="st5" cx="432" cy="570.7" r="8.1" />
-                        <circle class="st5" cx="451.2" cy="548.8" r="8.1" />
-                    </g>
-                </g>
-                <path class="st5 heart five" d="M451.4,343.5c-0.5-2.8-1.8-5.3-3.9-7.3c-2.1-2-4.7-3.3-7.5-3.7c-0.7-0.1-1.3-0.1-2-0.1c-5,0-9.6,2.7-11.9,7.1
-		c-2.4-4.3-6.9-7.1-11.9-7.1c-0.7,0-1.3,0-2,0.1c-2.8,0.4-5.4,1.7-7.5,3.7c-2.1,2-3.4,4.5-3.9,7.3c-0.8,4.3,0.5,8.6,3.5,11.8
-		c0.4,0.5,1,1.2,1.5,1.7c0.2,0.2,0.3,0.4,0.5,0.5c3.2,3.7,10.4,10.6,15.1,14.9c1.2,1.1,2.8,1.7,4.3,1.8c0.1,0,0.3,0,0.4,0
-		c0.1,0,0.2,0,0.4,0c1.6-0.1,3.1-0.7,4.3-1.8c4.8-4.3,11.9-11.2,15.1-14.9c0.1-0.2,0.3-0.4,0.5-0.5c0.5-0.6,1.1-1.2,1.5-1.7
-		C450.9,352.1,452.1,347.9,451.4,343.5z M425.9,372.7c0.1,0,0.2,0,0.3,0c0,0-0.1,0-0.1,0C426,372.7,426,372.7,425.9,372.7z" />
-                <path class="st5 heart four" d="M491.5,291.6c-0.4-2.1-1.4-3.9-2.9-5.4c-1.5-1.5-3.4-2.4-5.5-2.7c-0.5-0.1-1-0.1-1.5-0.1c-3.7,0-7.1,2-8.8,5.2
-		c-1.8-3.2-5.1-5.2-8.8-5.2c-0.5,0-1,0-1.5,0.1c-2.1,0.3-4,1.2-5.5,2.7c-1.5,1.5-2.5,3.4-2.9,5.4c-0.6,3.2,0.4,6.4,2.6,8.7
-		c0.3,0.4,0.7,0.9,1.1,1.3c0.1,0.1,0.2,0.3,0.4,0.4c2.4,2.7,7.7,7.8,11.2,11c0.9,0.8,2,1.3,3.2,1.3c0.1,0,0.2,0,0.3,0
-		c0.1,0,0.2,0,0.3,0c1.2,0,2.3-0.5,3.2-1.3c3.5-3.2,8.8-8.3,11.2-11c0.1-0.1,0.2-0.3,0.4-0.4c0.4-0.4,0.8-0.9,1.1-1.3
-		C491.1,298,492.1,294.9,491.5,291.6z M472.7,313.2c0.1,0,0.1,0,0.2,0c0,0-0.1,0-0.1,0C472.8,313.2,472.7,313.2,472.7,313.2z" />
-                <path class="st5 heart three" d="M421,257.5c-0.4-2.1-1.4-3.9-2.9-5.4c-1.5-1.5-3.4-2.4-5.5-2.7c-0.5-0.1-1-0.1-1.5-0.1c-3.7,0-7.1,2-8.8,5.2
-		c-1.8-3.2-5.1-5.2-8.8-5.2c-0.5,0-1,0-1.5,0.1c-2.1,0.3-4,1.2-5.5,2.7c-1.5,1.5-2.5,3.4-2.9,5.4c-0.6,3.2,0.4,6.4,2.6,8.7
-		c0.3,0.4,0.7,0.9,1.1,1.3c0.1,0.1,0.2,0.3,0.4,0.4c2.4,2.7,7.7,7.8,11.2,11c0.9,0.8,2,1.3,3.2,1.3c0.1,0,0.2,0,0.3,0s0.2,0,0.3,0
-		c1.2,0,2.3-0.5,3.2-1.3c3.5-3.2,8.8-8.3,11.2-11c0.1-0.1,0.2-0.3,0.4-0.4c0.4-0.4,0.8-0.9,1.1-1.3
-		C420.6,263.9,421.5,260.7,421,257.5z M402.1,279.1c0.1,0,0.1,0,0.2,0c0,0-0.1,0-0.1,0S402.2,279.1,402.1,279.1z" />
-                <path class="st5 heart one" d="M432.8,170.1c-0.2-1.3-0.8-2.5-1.8-3.4c-1-0.9-2.1-1.5-3.4-1.7c-0.3,0-0.6-0.1-0.9-0.1c-2.3,0-4.4,1.3-5.5,3.2
-		c-1.1-2-3.2-3.2-5.5-3.2c-0.3,0-0.6,0-0.9,0.1c-1.3,0.2-2.5,0.8-3.4,1.7c-1,0.9-1.6,2.1-1.8,3.4c-0.3,2,0.2,4,1.6,5.4
-		c0.2,0.2,0.5,0.5,0.7,0.8c0.1,0.1,0.2,0.2,0.2,0.3c1.5,1.7,4.8,4.9,7,6.8c0.5,0.5,1.3,0.8,2,0.8c0.1,0,0.1,0,0.2,0c0,0,0.1,0,0.2,0
-		c0.7,0,1.4-0.3,2-0.8c2.2-2,5.5-5.1,7-6.8c0.1-0.1,0.1-0.2,0.2-0.3c0.2-0.3,0.5-0.6,0.7-0.8C432.5,174,433.1,172.1,432.8,170.1z
-		 M421.1,183.5c0,0,0.1,0,0.1,0C421.2,183.5,421.2,183.5,421.1,183.5C421.1,183.5,421.1,183.5,421.1,183.5z" />
-                <path class="st5 heart two" d="M470.9,219.3c-0.3-1.8-1.2-3.3-2.5-4.6c-1.3-1.3-2.9-2.1-4.7-2.3c-0.4-0.1-0.8-0.1-1.3-0.1
-		c-3.1,0-6,1.7-7.5,4.4c-1.5-2.7-4.3-4.4-7.5-4.4c-0.4,0-0.8,0-1.3,0.1c-1.8,0.3-3.4,1.1-4.7,2.3c-1.3,1.3-2.2,2.9-2.5,4.6
-		c-0.5,2.7,0.3,5.4,2.2,7.4c0.3,0.3,0.6,0.7,0.9,1.1c0.1,0.1,0.2,0.2,0.3,0.3c2,2.3,6.5,6.6,9.5,9.3c0.7,0.7,1.7,1.1,2.7,1.1
-		c0.1,0,0.2,0,0.2,0c0.1,0,0.2,0,0.2,0c1,0,2-0.4,2.7-1.1c3-2.7,7.5-7,9.5-9.3c0.1-0.1,0.2-0.2,0.3-0.3c0.3-0.4,0.7-0.8,0.9-1.1
-		C470.5,224.7,471.3,222,470.9,219.3z M454.9,237.6c0.1,0,0.1,0,0.2,0C455,237.6,455,237.6,454.9,237.6
-		C454.9,237.6,454.9,237.6,454.9,237.6z" />
-            </g>
-        </svg>
-        <svg version="1.1" id="cat2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="260px" viewBox="0 0 542.5 501.5" enable-background="new 0 0 542.5 501.5" xml:space="preserve">
-            <path id="rightEarShadow" fill="#656565" stroke="#656565" stroke-width="10" stroke-miterlimit="10" d="M470.6,214.7c-1.1-2.1-8.3-4.3,2-9.7c10.3-5.4,34.2-11.8,35.3-9.7s-6.4,8.2-16.6,13.5C480.9,214.2,471.7,216.8,470.6,214.7z" />
-            <path id="leftEarShadow" fill="#656565" stroke="#656565" stroke-width="10" stroke-miterlimit="10" d="M459.4,218.7c-1.6-1.8-13.2-1.8-4.4-9.5s34.5-20,36-18.2c1.6,1.8-4.2,9.4-13,17.1S461,220.5,459.4,218.7z" />
-            <path id="tailShadow" fill="none" stroke="#656565" stroke-width="33" stroke-linecap="round" stroke-miterlimit="10" d="M95,239c0.8-75.8-38.8-122.2-32-153s37-18,37-18" />
-            <path id="body" fill="#A3B5BE" stroke="#656565" stroke-width="5" stroke-miterlimit="10" d="M493.4,222.7c-11.4-15-4.2-18.4-37.4-19.8c-12.3-0.5-21.6-2.3-31.1,3c-9.5,5.4-20.7,13.3-28.4,15c-7.7,1.8-46.6,9.7-52.2,6.9c-5.6-2.7-54.7-36-87.4-44.7c-16.3-4.3-32-3.3-48.8-0.1c-16.7,3-23.4,1.8-44.6,3.8c-30.3,2.8-65.8,1.9-75.3,28.3c-7.7,21.6-11.6,36.3,4.8,72c10.7,23.5,21.3,32.3,23.5,59.6s0.5,35.2-1,45.2c-1.4,10.1,9.9,29.9,13.9,37.6s19.6,34,29.1,40.7c4,2.9,10.1,1,16.8,2.9c6.7,1.9,16.8-2.4,18.9-6.4c2.1-4,3.8-8.8-0.3-14.4c0,0,1.6-8.6-8.8-12.5c-10.6-3.8-16.5-5.9-18.7-10.5c-2.2-4.6-10.4-24.9-7.2-31.8c3.2-6.9,24.6-40.7,28.3-46.5c3.5-5.7,8-4,13.6-3.2c10.7,1.8,28.9,1,46,2.9c17.1,1.9,43.6,8.8,52.9,11.2c9.3,2.4,11.2,15,15.2,25.6c3.8,10.5,17.3,38,20.1,51.4c2.9,13.4,4.3,26.3,11.2,30.4c6.9,4,17.6,0.5,17.6,0.5s6.7,0.8,12.5,0.5c5.8-0.3,11.5-4.5,8.6-12.9c0,0,9.7,2.5,13.6,1c4.8-1.9,8-6.7,4.5-13.1c-2.7-5.1-9.3-8-13.9-8.3c-4.5-0.5-7.7-7.7-8.3-12.6c-0.8-5.1-0.8-31.5-2.4-40.2c-2.3-12.1,6.2-21.1,14.9-25.1c8.6-4,31.2-18.2,38.7-35.2c7.5-17.1,13.1-26.3,19.5-27.3c6.2-1,16.5,8.6,27.5,6.4c11-2.1,12-4.8,15.8-8.1c3.8-3.4,4.3-7.5,2.7-13.4c-1.6-5.9,0.3-18.7,1.6-23.5C500.9,253.4,504.2,236.9,493.4,222.7z" />
-            <path id="tail1" fill="none" stroke="#A3B5BE" stroke-width="23" stroke-linecap="round" stroke-miterlimit="10" d="M95,239c0.8-75.8-38.8-122.2-32-153s37-18,37-18" />
-            <path id="tail2" opacity="0" fill="none" stroke="#A3B5BE" stroke-width="23" stroke-linecap="round" stroke-miterlimit="10" d="M95,239c-7.1-57.8,43-66.8,56.9-113.8s-19.1-55-19.1-55" />
-            <path id="tail3" opacity="0" fill="none" stroke="#A3B5BE" stroke-width="23" stroke-linecap="round" stroke-miterlimit="10" d="M95,239c4.8-80.8-60.2-117.8-66.2-146.8s17-34,17-34" />
-            <path id="tail4" opacity="0" fill="none" stroke="#A3B5BE" stroke-width="23" stroke-linecap="round" stroke-miterlimit="10" d="M95,239c-19.2-60.8,70-86.8,81.4-126.8s-13.6-46.9-13.6-46.9" />
-            <path id="rightEar" fill="#A3B5BE" d="M470.6,214.7c-1.1-2.1-8.3-4.3,2-9.7c10.3-5.4,34.2-11.8,35.3-9.7s-6.4,8.2-16.6,13.5C480.9,214.2,471.7,216.8,470.6,214.7z" />
-            <path id="leftEar" fill="#A3B5BE" d="M459.4,218.7c-1.6-1.8-13.2-1.8-4.4-9.5s34.5-20,36-18.2c1.6,1.8-4.2,9.4-13,17.1S461,220.5,459.4,218.7z" />
-            <g id="patches">
-                <path id="backFoot" fill="#FFFFFF" stroke="#656565" stroke-width="3" stroke-miterlimit="10" d="M151.9,459c0,2.3,0.6,4.5,1.6,6.6c1.8,1.9,3.5,3.5,5,4.6c4,2.9,10.1,1,16.8,2.9c6.7,1.9,16.8-2.4,18.9-6.4c2.1-4,3.8-8.8-0.3-14.4c0,0,1.6-8.6-8.8-12.5c-3.3-1.2-6.2-2.2-8.6-3.2C161.9,441,151.9,449.4,151.9,459z" />
-                <path id="legLine" fill="none" stroke="#656565" stroke-width="5" stroke-linecap="round" stroke-miterlimit="10" d="M385.3,457.6c-3.4-13.1-21.4-18.1-24.4-34.1s1-21,0-36s16.1-32.6,16.1-32.6" />
-                <path id="frontFoot" fill="#FFFFFF" stroke="#656565" stroke-width="3" stroke-miterlimit="10" d="M346.6,469.5c6.9,4,17.6,0.5,17.6,0.5s6.7,0.8,12.5,0.5s11.5-4.5,8.6-12.9c-0.2-0.8-0.5-1.6-0.8-2.4l-4.2-6.4c0,0-8-7.7-24.4-6.3c-9.1,0.8-14.9,4.6-18.2,7.8C339.6,459.1,341.7,466.5,346.6,469.5z" />
-                <path id="belly" fill="#FFFFFF" stroke="#656565" stroke-width="3" stroke-miterlimit="10" d="M276.9,343.7c-16-3.8-17-5.2-51-7.2S187.6,351,187.6,351c3.5-5.7,8-4,13.6-3.2c10.7,1.8,28.9,1,46,2.9c17.1,1.9,43.6,8.8,52.9,11.2c2.9,0.7,5.1,2.5,6.9,4.9C306.8,366.6,292.8,347.5,276.9,343.7z" />
-                <path id="neck" fill="#FFFFFF" stroke="#656565" stroke-width="3" stroke-miterlimit="10" d="M407.9,322.5c-10.5,13.8-17.3,15.7-27,26c-14.3,15.1-7.6,26.4-2.4,31.7c0.1-10,7.6-17.4,15.3-20.9c8.6-4,31.2-18.2,38.7-35.2c5.3-12.1,9.7-20.2,14-24.3C439.8,299.8,423.2,302.4,407.9,322.5z" />
-            </g>
-        </svg>
-        <div id="cat">
-            <div class="head">
-                <div class="stripe">
-                </div>
-                <div class="stripe stripe2">
-                </div>
-                <div class="stripe stripe3">
-                </div>
-                <div class="ear1">
-                </div>
-                <div class="ear2">
-                </div>
-                <div class="eye1 eye">
-                </div>
-                <div class="eye2 eye">
-                </div>
-                <div class="nose">
-                </div>
-                <div class="mouth">
-                    (
-                    <span></span> (
-                </div>
-            </div>
-            <div class="catbody">
-                <div class="stripe">
-                </div>
-                <div class="stripe mid">
-                </div>
-                <div class="stripe front">
-                </div>
-            </div>
-            <div class="paw paw1">
-            </div>
-            <div class="paw paw2">
-            </div>
-            <div class="paw paw3">
-            </div>
-            <div class="tail">
-            </div>
-            <div class="pillow">
-            </div>
-        </div>
-    </div>
-    <script type="text/javascript">
-    var offsetX = $("#loveHeart").width() / 2;
-    var offsetY = $("#loveHeart").height() / 2 - 55;
-    var together = new Date();
-    together.setFullYear(2016, 9, 28);
-    together.setHours(20);
-    together.setMinutes(0);
-    together.setSeconds(0);
-    together.setMilliseconds(0);
 
-    if (!document.createElement('canvas').getContext) {
-        var msg = document.createElement("div");
-        msg.id = "errorMsg";
-        msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
-        document.body.appendChild(msg);
-        $("#code").css("display", "none")
-        document.execCommand("stop");
-    } else {
-        setTimeout(function() {
-            startHeartAnimation();
-        }, 5000);
-
-        timeElapse(together);
-        setInterval(function() {
-            timeElapse(together);
-        }, 500);
-
-        adjustCodePosition();
-        $("#code").typewriter();
-    }
-    var cat;
-    var tail;
-    var shadow;
-    var leftEar;
-    var leftEarShadow;
-    var rightEar;
-    var rightEarShadow;
-    var tails = [];
-    var commandList = ["m", "M", "c", "C", "s", "S"];
-    var index = 1;
-    window.onload = function() {
-        cat = document.getElementById("cat2");
-        tail = cat.getElementById("tail1");
-        shadow = cat.getElementById("tailShadow");
-        leftEar = cat.getElementById("leftEar");
-        leftEarShadow = cat.getElementById("leftEarShadow");
-        rightEar = cat.getElementById("rightEar");
-        rightEarShadow = cat.getElementById("rightEarShadow");
-        tails[0] = parsePath(cat.getElementById("tail1").getAttribute("d"));
-        tails[1] = parsePath(cat.getElementById("tail2").getAttribute("d"));
-        tails[2] = parsePath(cat.getElementById("tail3").getAttribute("d"));
-        tails[3] = parsePath(cat.getElementById("tail4").getAttribute("d"));
-        tweenTail();
-        tweenEar("left");
-        tweenEar("right");
-        var inputvalue = -34;
-        var positive = false;
-        var base = 50;
-    };
-    </script>
-    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/TweenMax.min.1.14.1-release.js'></script>
-    <script type="text/javascript">
-    function tweenTail() {
-        var targetData = tails[index];
-        var duration = Math.random() + 1.5;
-        for (var i = 0; i < targetData.length; i++) {
-            var tweenObject = targetData[i].original;
-            tweenObject.delay = .3 * (2 - i);
-            tweenObject.ease = Cubic.easeInOut;
-            tweenObject.onUpdate = updatePath;
-            TweenMax.killTweensOf(tails[0][i].current);
-            TweenMax.to(tails[0][i].current, duration - (tweenObject.delay * .25), tweenObject)
-        }
-        TweenMax.delayedCall(duration, tweenTail);
-        index++;
-        if (index == tails.length) {
-            index = 0;
-        }
-    }
-
-    function tweenEar(direction) {
-        TweenMax.to([this[direction + "Ear"], this[direction + "EarShadow"]], (Math.random() * .5) + .3, {
-            css: {
-                rotation: (Math.random() * 20) - 15,
-                transformOrigin: "30% 100%"
-            },
-            delay: (Math.random() * .5) + .6,
-            ease: Quart.easeInOut,
-            onComplete: tweenEar,
-            onCompleteParams: [direction],
-            onCompleteScope: this
-        });
-    }
-
-    function updatePath() {
-        var string = "";
-        for (var i = 0; i < tails[0].length; i++) {
-            var point = tails[0][i];
-            var command = point.command;
-            string += command;
-            string += point.current;
-        }
-        tail.setAttribute("d", string);
-        shadow.setAttribute("d", string);
-    }
-
-    function parsePath(path) {
-        var points = [];
-        path = addCommas(path);
-        for (var i = 0; i < path.length; i++) {
-            var nextIndex = getNextIndex(path, i);
-            var string = path.substring(i, nextIndex);
-            var command = string.substring(0, 1);
-            var data = string.substring(1);
-            var dataArray = data.split(",");
-            for (var d = 0; d < dataArray.length; d++) {
-                dataArray[d] = parseFloat(dataArray[d]);
-            }
-            var pathData = {
-                command: command,
-                current: dataArray.slice(),
-                original: dataArray.slice()
-            }
-
-            points.push(pathData);
-            i = nextIndex - 1;
-        }
-        return points;
-    }
-
-    function addCommas(string) {
-        string = string.replace(/-/g, ",-");
-        string = string.replace(/,,/g, ",");
-        for (var i = 0; i < commandList.length; i++) {
-            var command = commandList[i];
-            var reg = new RegExp(command + ",", "g");
-            string = string.replace(reg, command);
-        }
-        return string;
-    }
-
-    function getNextIndex(string, startIndex) {
-        var nextIndex = string.length;
-        for (var i = 0; i < commandList.length; i++) {
-            var command = commandList[i];
-            var index = string.indexOf(command, startIndex + 1);
-            if (index < nextIndex && index != -1) {
-                nextIndex = index;
-            }
-        }
-        return nextIndex;
-    }
-    </script>
-    <script type="text/javascript">
-    $('#cat').mousedown(function() {
-        $('.catbody').addClass('purr');
-        $('.head').addClass('purr2');
-        $('.eye').addClass('purreye');
-    });
-
-    $('#cat').mouseup(function() {
-        $('.catbody').removeClass('purr');
-        $('.head').removeClass('purr2');
-        $('.eye').removeClass('purreye');
-    });
-    </script>
+<header>
+  <div class="first"><span>W</span><span>h</span><span>o</span><span>&nbsp;</span></div>
+  <div class="second"><span>W</span><span>i</span><span>l</span><span>l</span><span>&nbsp;</span></div>
+  <div class="third"><span>B</span><span>e</span><span>&nbsp;</span></div>
+  <div class="fourth"><span>C</span><span>h</span><span>o</span><span>s</span><span>e</span><span>n</span><span>&nbsp;</span></div>
+  <div class="fifth"><span>B</span><span>y</span><span>&nbsp;</span></div>
+  <div class="sixth"><span>D</span><span>r</span><span>.</span><span>B</span><span>a</span><span>k</span><span>e</span><span>r</span></div>
+</header>
+<div class="slotMachine">
+	<div id="viewbox">
+		<div class="wrapper" id="slotmachine">
+			<img id="baker" class="color" name="baker" src="./images/baker.jpg">
+		</div>
+	</div>
+	<div style="margin:50px;">
+		<div id="equation" class="done">
+			<div id="shoulder"><div id="arm"></div></div>
+		</div>
+	</div>
+	<a id="stop" class="stopButton"></a>
+</div>
+<div id="circle">
+	<div><img id="circle_00"  class="color" name="史考特" src="./images/1.jpg"></div>
+	<div><img id="circle_01"  class="color" name="立涵" src="./images/2.jpg"></div>
+	<div><img id="circle_02"  class="color" name="先豪" src="./images/3.jpg"></div>
+	<div><img id="circle_03"  class="color" name="辰豪" src="./images/4.jpg"></div>
+	<div><img id="circle_04"  class="color" name="筱涵" src="./images/5.jpg"></div>
+	<div><img id="circle_05"  class="color" name="士豪" src="./images/6.jpg"></div>
+	<div><img id="circle_06"  class="color" name="鄭立文" src="./images/7.jpg"></div>
+	<div><img id="circle_07"  class="color" name="大寶哥" src="./images/8.jpg"></div>
+	<div><img id="circle_08"  class="color" name="祐誠" src="./images/9.jpg"></div>
+	<div><img id="circle_09"  class="color" name="維尼" src="./images/10.jpg"></div>
+	<div><img id="circle_010"  class="color" name="史考特" src="./images/1.jpg"></div>
+	<div><img id="circle_011"  class="color" name="立涵" src="./images/2.jpg"></div>
+	<div><img id="circle_012"  class="color" name="先豪" src="./images/3.jpg"></div>
+	<div><img id="circle_013"  class="color" name="辰豪" src="./images/4.jpg"></div>
+	<div><img id="circle_014"  class="color" name="筱涵" src="./images/5.jpg"></div>
+	<div><img id="circle_015"  class="color" name="士豪" src="./images/6.jpg"></div>
+	<div><img id="circle_016"  class="color" name="鄭立文" src="./images/7.jpg"></div>
+	<div><img id="circle_017"  class="color" name="大寶哥" src="./images/8.jpg"></div>
+	<div><img id="circle_018"  class="color" name="祐誠" src="./images/9.jpg"></div>
+	<div><img id="circle_019"  class="color" name="維尼" src="./images/10.jpg"></div>
+</div>
+<script src="js/bundle.js"></script>
 </body>
-
 </html>
+
+
