@@ -2,107 +2,19 @@
 <html>
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <title>抽抽樂</title>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/CSSPlugin.min.js"></script>
 <script src="js/EasePack.min.js"></script>
 <script src="js/TweenLite.min.js"></script>
-<link rel="stylesheet" href="./css/bar.css">
-<link rel="stylesheet" href="./css/stopButton.css">
-<link rel="stylesheet" href="./css/title.css">
-<link rel="stylesheet" href="./css/coin.css">
-<link rel="stylesheet" href="./css/card.css">
-<style>
-body {
-	margin: auto;
-	background: #222;
-}
-.slotMachine{
-	display: flex;
-	flex-flow: row wrap;
-	justify-content: Center;
-	align-items: Center;
-}
-.start{
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  background-color: #fff;
-  cursor: all-scroll;
-}
-.disabledButton
-{
-  background-color:gray;
-  cursor: not-allowed !important;
-  pointer-events: none !important;
-}
-.stop {
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  background-color: #fff;
-  cursor: all-scroll;
-}
-#circle{
-	display: flex;
-	align-items: Center;
-	flex-flow: row wrap;
-	justify-content: space-around;
-	width: 100%;
-	height: 300px;
-}
-#circle div img{
-	opacity: 1;
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-	width: 100%;
-    height: 100%;
-	flex: 0 1 calc(20%);
-	border-radius:50%;
-}
-#circle div{
-	border-radius:50%;
-	background: #FFFE9F;
-	margin: 3px;
-	width: 87px;
-    height: 87px;
-	font-size: 12px;
-	/*margin: 15px;*/
-}
-#reel{
-	width: 300px;
-    height: 300px;
-	border-radius:50%;
-	margin: 15px;
-	background-color: gray;
-}
-
-.colorRed{
-	opacity: .5 !important;
-}
-#viewbox {
-	margin:50px;
-    overflow: hidden;
-    width: 295px;
-    height: 295px;
-	border-radius:50%;
-    position: relative;
-}
-#viewbox .wrapper {
-    position: relative;
-	border-radius:50%;
-}
-#viewbox img {
-	
-    width: 100%;
-    height: 100%;
-	border-radius:50%;
-}
-#baker{
-	width: 295px !important;
-	height: 295px !important;
-}
-</style>
+<link rel="stylesheet" type="text/css" media="screen and(min-width: 480px) and (max-width: 1199px)" href="./css/mainPhone.css">
+<link rel="stylesheet" type="text/css" media="screen and (min-width:1200px)" href="./css/main.css">
+<link rel="stylesheet" type="text/css" href="./css/bar.css">
+<link rel="stylesheet" type="text/css" href="./css/stopButton.css">
+<link rel="stylesheet" type="text/css" href="./css/title.css">
+<link rel="stylesheet" type="text/css" href="./css/coin.css">
+<link rel="stylesheet" type="text/css" href="./css/card.css">
 
 </head>
 
