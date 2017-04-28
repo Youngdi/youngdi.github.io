@@ -58,8 +58,8 @@ body {
 #circle div{
 	background: #FFFE9F;
 	margin: 3px;
-	width: 150px;
-    height: 150px;
+	width: 100px;
+    height: 100px;
 }
 #circle1 {
 	display: flex;
@@ -80,8 +80,8 @@ body {
 #circle1 div{
 	background: #FFFE9F;
 	margin: 3px;
-	width: 150px;
-    height: 150px;
+	width: 100px;
+    height: 100px;
 }
 #circle2 {
 	display: flex;
@@ -102,8 +102,8 @@ body {
 #circle2 div{
 	background: #FFFE9F;
 	margin: 3px;
-	width: 150px;
-    height: 150px;
+	width: 100px;
+    height: 100px;
 }
 #circle3 {
 	display: flex;
@@ -123,8 +123,8 @@ body {
 #circle3 div{
 	background: #FFFE9F;
 	margin: 3px;
-	width: 150px;
-    height: 150px;
+	width: 100px;
+    height: 100px;
 }
 #reel{
 	width: 300px;
