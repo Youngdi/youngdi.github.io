@@ -1,4 +1,5 @@
 import Rx from 'rxjs/Rx';
+
 const colors = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19];
 const name = ['blue', 'red', 'yellow', 'green', 'black', 'white', 'gray', 'pink', '#3D262A', '#127C56'];
 const nameList = [
@@ -59,11 +60,15 @@ const source = RandomNumbers => Rx.Observable
       complete: () => {
         $('#arm').removeClass('disabledButton');
         // TweenLite.to($('#slotmachine'), 2.5, { ease: Bounce.easeOut, y: top });
-        setTimeout(() => alert($('.colorRed')[0].name), 2500);
+        setTimeout(() => {
+          $('.front').css("background", `url(${$('.colorRed')[0].src})`);
+          alert($('.colorRed')[0].name);
+        }, 2500);
       },
     });
 startClick
   .map(() => {
+    $('.front').css("background", `url(./images/question.jpg)`);
     $('#arm').addClass('clicked');
     $('#arm')[0].disabled = true;
     //setTimeout(() => { arm.removeClass; }, 500);

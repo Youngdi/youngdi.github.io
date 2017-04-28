@@ -1,0 +1,38 @@
+{
+  "name": "youngdi",
+  "version": "1.0.0",
+  "private": true,
+  "license": "see LICENSE file",
+  "description": "Todo Practice by Samson Bill",
+  "main": "server.js",
+  "dependencies": {
+    "rxjs": "^5.3.0",
+    "uglifyjs-webpack-plugin": "^0.4.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-es2015": "^6.24.1",
+    "rx": "^4.1.0",
+    "uglify-js": "^2.8.22",
+    "webpack": "fulls1z3/webpack#v2.1.0-beta.27-harmony",
+    "webpack-dev-server": "^2.4.5"
+  },
+  "scripts": {
+    "start": "webpack --watch",
+    "build": "webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/youngdi"
+  },
+  "keywords": [],
+  "author": "Youngdi Bill",
+  "bugs": {
+    "url": "https://github.com/youngdi"
+  },
+  "homepage": "https://github.com/youngdi",
+  "engines": {
+    "node": "7.4.0"
+  }
+}
