@@ -1,7 +1,5 @@
 import Rx from 'rxjs/Rx';
 
-const colors = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19];
-const name = ['blue', 'red', 'yellow', 'green', 'black', 'white', 'gray', 'pink', '#3D262A', '#127C56'];
 const nameList = [
     { src: './images/1.jpg', name: '史考特' },
     { src: './images/2.jpg', name: '立涵' },
@@ -47,24 +45,23 @@ const source = RandomNumbers => Rx.Observable
     .takeUntil(stopClick)
     .do({
       next: (e) => {
-        // const slot = Math.floor(Math.random() * 20);
-        // const top = -slot * 300;
         const top = e * -300;
-        if ($('#slotmachine img').length < 50) {
+        const imgNumbers = $('#slotmachine img').length;
+        if (imgNumbers < 50) {
           const imgElement = document.createElement('img');
           imgElement.src = nameList[e % 30].src;
           imgElement.name = nameList[e % 30].name;
           imgElement.class = 'color';
           document.getElementById('slotmachine').appendChild(imgElement);
         }
-        TweenLite.to($('#slotmachine'), 2.5, { ease: Bounce.easeOut, y: top - 300 });
+        if (imgNumbers < 20) {
+          TweenLite.to($('#slotmachine'), 1 , { ease: Bounce.easeOut, y: top - 300 });
+        } else if (imgNumbers > 20 && imgNumbers < 30){
+          TweenLite.to($('#slotmachine'), 1.5 , { ease: Bounce.easeOut, y: top - 300 });
+        } else {
+          TweenLite.to($('#slotmachine'), 2 , { ease: Bounce.easeOut, y: top - 300 });
+        }
         $('.colorRed').removeClass('colorRed');
-        // const maxNum = e;
-        // const minNum = 0;
-        // const index = Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;
-        // $('#reel')[0].src = nameList[index % nameList.length].src;
-
-        // $(`#circle_0${colors[index]}`).addClass('colorRed');
         $(`#circle_0${e % 30}`).addClass('colorRed');
       },
       complete: () => {
@@ -81,7 +78,6 @@ startClick
     $('.front').css("background", `url(./images/question.jpg)`);
     $('#arm').addClass('clicked');
     $('#arm')[0].disabled = true;
-    //setTimeout(() => { arm.removeClass; }, 500);
     TweenLite.to($('#slotmachine'), 0.5, { ease: Power0.easeNone, y: 0 });
     const RandomNumbers = Math.floor(Math.random() * 10) + 30;
     return source(RandomNumbers);
