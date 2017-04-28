@@ -19819,6 +19819,14 @@ const nameList = [
     { src: './images/8.jpg', name: '大寶哥' },
     { src: './images/9.jpg', name: '祐誠' },
     { src: './images/10.jpg', name: '維尼' },
+    { src: './images/1.jpg', name: '史考特' },
+    { src: './images/2.jpg', name: '立涵' },
+    { src: './images/3.jpg', name: '先豪' },
+    { src: './images/4.jpg', name: '辰豪' },
+    { src: './images/5.jpg', name: '筱涵' },
+    { src: './images/6.jpg', name: '士豪' },
+    { src: './images/7.jpg', name: '鄭立文' },
+    { src: './images/8.jpg', name: '大寶哥' },
 ];
 const start = document.getElementById('arm');
 const stop = document.getElementById('stop');
@@ -19838,8 +19846,8 @@ const source = RandomNumbers => __WEBPACK_IMPORTED_MODULE_0_rxjs_Rx___default.a.
         const top = e * -300;
         if ($('#slotmachine img').length < 50) {
           const imgElement = document.createElement('img');
-          imgElement.src = nameList[e % 20].src;
-          imgElement.name = nameList[e % 20].name;
+          imgElement.src = nameList[e % 28].src;
+          imgElement.name = nameList[e % 28].name;
           imgElement.class = 'color';
           document.getElementById('slotmachine').appendChild(imgElement);
         }
@@ -19851,7 +19859,7 @@ const source = RandomNumbers => __WEBPACK_IMPORTED_MODULE_0_rxjs_Rx___default.a.
         // $('#reel')[0].src = nameList[index % nameList.length].src;
 
         // $(`#circle_0${colors[index]}`).addClass('colorRed');
-        $(`#circle_0${e % 20}`).addClass('colorRed');
+        $(`#circle_0${e % 28}`).addClass('colorRed');
       },
       complete: () => {
         $('#arm').removeClass('disabledButton');

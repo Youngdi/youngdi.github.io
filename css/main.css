@@ -8,6 +8,13 @@ body {
 	justify-content: Center;
 	align-items: Center;
 }
+.slotMachine1 {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	flex-grow: 1.3;
+}
 .start{
   display: inline-block;
   width: 100px;
@@ -28,13 +35,17 @@ body {
   background-color: #fff;
   cursor: all-scroll;
 }
+.secondLayer {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
 #circle{
 	display: flex;
-	align-items: Center;
-	flex-flow: row wrap;
-	justify-content: space-around;
+	align-items: flex-end;
+	justify-content: center;
 	width: 100%;
-	height: 300px;
+	height: 100%;
 }
 #circle div img{
 	opacity: 1;
@@ -43,16 +54,77 @@ body {
 	width: 100%;
     height: 100%;
 	flex: 0 1 calc(20%);
-	border-radius:50%;
 }
 #circle div{
-	border-radius:50%;
 	background: #FFFE9F;
 	margin: 3px;
-	width: 87px;
-    height: 87px;
-	font-size: 12px;
-	/*margin: 15px;*/
+	width: 150px;
+    height: 150px;
+}
+#circle1 {
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	flex-direction:column;
+	height: 100%;
+	flex-grow: 1;
+}
+#circle1 div img{
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	width: 100%;
+    height: 100%;
+	flex: 0 1 calc(20%);
+}
+#circle1 div{
+	background: #FFFE9F;
+	margin: 3px;
+	width: 150px;
+    height: 150px;
+}
+#circle2 {
+	display: flex;
+	align-items: flex-start;
+	justify-content: flex-end;
+	flex-direction:column;
+	height: 100%;
+	flex-grow: 1;
+}
+#circle2 div img{
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	width: 100%;
+    height: 100%;
+	flex: 0 1 calc(20%);
+}
+#circle2 div{
+	background: #FFFE9F;
+	margin: 3px;
+	width: 150px;
+    height: 150px;
+}
+#circle3 {
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+}
+#circle3 div img{
+	opacity: 1;
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	width: 100%;
+    height: 100%;
+	flex: 0 1 calc(20%);
+}
+#circle3 div{
+	background: #FFFE9F;
+	margin: 3px;
+	width: 150px;
+    height: 150px;
 }
 #reel{
 	width: 300px;
@@ -66,7 +138,6 @@ body {
 	opacity: .5 !important;
 }
 #viewbox {
-	margin:50px;
     overflow: hidden;
     width: 295px;
     height: 295px;
@@ -78,7 +149,6 @@ body {
 	border-radius:50%;
 }
 #viewbox img {
-	
     width: 100%;
     height: 100%;
 	border-radius:50%;
