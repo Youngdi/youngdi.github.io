@@ -61,21 +61,31 @@ body {
 	width: 100px;
     height: 100px;
 }
-#circle1 {
-	display: flex;
-	align-items: flex-end;
-	justify-content: flex-end;
-	flex-direction:column;
-	height: 100%;
-	flex-grow: 1;
+@media screen and (min-width: 1200px) {
+	#circle1 {
+		display: flex;
+		align-items: flex-end;
+		justify-content: flex-end;
+		flex-direction:column;
+		height: 100%;
+		flex-grow: 1;
+	}
 }
-#circle1 div img{
+@media screen and (min-width: 960px) and (max-width: 1199px) {
+	#circle1 {
+		display: flex;
+		align-items: flex-end;
+		justify-content: flex-end;
+		flex-direction:column;
+		height: 100%;
+	}
+}
+#circle1 div img {
 	opacity: 1;
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 	width: 100%;
     height: 100%;
-	flex: 0 1 calc(20%);
 }
 #circle1 div{
 	background: #FFFE9F;
@@ -83,13 +93,24 @@ body {
 	width: 100px;
     height: 100px;
 }
-#circle2 {
-	display: flex;
-	align-items: flex-start;
-	justify-content: flex-end;
-	flex-direction:column;
-	height: 100%;
-	flex-grow: 1;
+@media screen and (min-width: 1200px) {
+	#circle2 {
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-end;
+		flex-direction:column;
+		height: 100%;
+		flex-grow: 1;
+	}
+}
+@media screen and (min-width: 960px) and (max-width: 1199px) {
+	#circle2 {
+		display: flex;
+		align-items: flex-start;
+		justify-content: flex-end;
+		flex-direction:column;
+		height: 100%;
+	}
 }
 #circle2 div img{
 	opacity: 1;
