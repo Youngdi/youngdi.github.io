@@ -40,26 +40,36 @@ body {
 	display: flex;
 	justify-content: space-around;
 }
-#circle{
+@media screen and (min-width: 1441px) {
+	#circle div {
+		background: #FFFE9F;
+		margin: 3px;
+		width: 125px;
+		height: 125px;
+	}
+}
+@media screen and (min-width: 960px) and (max-width: 1440px) {
+	#circle div {
+		background: #FFFE9F;
+		margin: 3px;
+		width: 100px;
+		height: 100px;
+	}
+}
+#circle {
 	display: flex;
 	align-items: flex-end;
 	justify-content: center;
 	width: 100%;
 	height: 100%;
 }
-#circle div img{
+#circle div img {
 	opacity: 1;
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 	width: 100%;
     height: 100%;
 	flex: 0 1 calc(20%);
-}
-#circle div{
-	background: #FFFE9F;
-	margin: 3px;
-	width: 100px;
-    height: 100px;
 }
 @media screen and (min-width: 1441px) {
 	#circle1 {
@@ -70,6 +80,12 @@ body {
 		height: 100%;
 		flex-grow: 1;
 	}
+	#circle1 div {
+		background: #FFFE9F;
+		margin: 3px;
+		width: 125px;
+		height: 125px;
+	}
 }
 @media screen and (min-width: 960px) and (max-width: 1440px) {
 	#circle1 {
@@ -78,6 +94,12 @@ body {
 		justify-content: flex-end;
 		flex-direction:column;
 		height: 100%;
+	}
+	#circle1 div {
+		background: #FFFE9F;
+		margin: 3px;
+		width: 100px;
+		height: 100px;
 	}
 }
 #circle1 div img {
@@ -87,12 +109,6 @@ body {
 	width: 100%;
     height: 100%;
 }
-#circle1 div{
-	background: #FFFE9F;
-	margin: 3px;
-	width: 100px;
-    height: 100px;
-}
 @media screen and (min-width: 1441px) {
 	#circle2 {
 		display: flex;
@@ -102,6 +118,12 @@ body {
 		height: 100%;
 		flex-grow: 1;
 	}
+	#circle2 div {
+		background: #FFFE9F;
+		margin: 3px;
+		width: 125px;
+		height: 125px;
+	}
 }
 @media screen and (min-width: 960px) and (max-width: 1440px) {
 	#circle2 {
@@ -110,6 +132,12 @@ body {
 		justify-content: flex-end;
 		flex-direction:column;
 		height: 100%;
+	}
+	#circle2 div {
+		background: #FFFE9F;
+		margin: 3px;
+		width: 100px;
+		height: 100px;
 	}
 }
 #circle2 div img{
@@ -120,11 +148,21 @@ body {
     height: 100%;
 	flex: 0 1 calc(20%);
 }
-#circle2 div{
-	background: #FFFE9F;
-	margin: 3px;
-	width: 100px;
-    height: 100px;
+@media screen and (min-width: 1441px) {
+	#circle3 div {
+		background: #FFFE9F;
+		margin: 3px;
+		width: 125px;
+		height: 125px;
+	}
+}
+@media screen and (min-width: 960px) and (max-width: 1440px) {
+	#circle3 div {
+		background: #FFFE9F;
+		margin: 3px;
+		width: 100px;
+		height: 100px;
+	}
 }
 #circle3 {
 	display: flex;
@@ -141,12 +179,6 @@ body {
     height: 100%;
 	flex: 0 1 calc(20%);
 }
-#circle3 div{
-	background: #FFFE9F;
-	margin: 3px;
-	width: 100px;
-    height: 100px;
-}
 #reel{
 	width: 300px;
     height: 300px;
@@ -154,7 +186,6 @@ body {
 	margin: 15px;
 	background-color: gray;
 }
-
 .colorRed{
 	opacity: .5 !important;
 }
