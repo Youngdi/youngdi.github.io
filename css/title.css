@@ -16,6 +16,14 @@ header {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+@media screen and (min-width: 1441px) {
+  header span {
+    font-size: 115px;
+    color: #FFF;
+    -webkit-animation: titleShow 0.25s cubic-bezier(0.25, 0.1, 0.25, 1) both;
+            animation: titleShow 0.25s cubic-bezier(0.25, 0.1, 0.25, 1) both;
+  }
+}
 @media screen and (min-width: 1200px) {
   header span {
     font-size: 80px;
