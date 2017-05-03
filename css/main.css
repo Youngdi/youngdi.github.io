@@ -1,8 +1,8 @@
-@import url("title.css");
-@import url("coin.css");
-@import url("bar.css");
-@import url("stopButton.css");
-@import url("card.css");
+@import './title.css';
+@import './coin.css';
+@import './bar.css';
+@import './stopButton.css';
+@import './card.css';
 
 body {
 	margin: auto;

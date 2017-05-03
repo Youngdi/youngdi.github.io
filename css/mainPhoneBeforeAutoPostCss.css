@@ -1,0 +1,117 @@
+@import './title.css';
+@import './coin.css';
+@import './bar.css';
+@import './stopButton.css';
+@import './card.css';
+
+body {
+	margin: auto;
+	background: #222;
+}
+.slotMachine{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: Center;
+	align-items: Center;
+}
+.slotMachine1 {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+	flex-grow: 1.3;
+}
+
+.phoneSlotMachine {
+	display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-around;
+    flex-flow: row wrap;
+	margin-top:0px !important;
+}
+.container {
+	margin-top: 50px !important;
+}
+header span {
+	font-size: 32px !important;
+}
+.secondLayer {
+	width: 100%;
+	display: flex;
+	flex-flow: row wrap;
+	flex-direction: column;
+}
+
+.start{
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  cursor: all-scroll;
+}
+.disabledButton
+{
+  background-color:gray;
+  cursor: not-allowed !important;
+  pointer-events: none !important;
+}
+.stop {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  cursor: all-scroll;
+}
+.phoneStop {
+	display:flex;
+	margin-top: 50px !important;
+	margin-left: -30px !important;
+}
+.phoneStart {
+	display:flex;
+	margin-left: 25px !important;
+}
+#circle{
+	display: none;
+}
+#circle1{
+	display: none;
+}
+#circle2{
+	display: none;
+}
+#circle3{
+	display: none;
+}
+#reel{
+	width: 300px;
+    height: 300px;
+	border-radius:50%;
+	margin: 15px;
+	background-color: gray;
+}
+.colorRed{
+	opacity: .5 !important;
+}
+#viewbox {
+	margin:50px;
+    overflow: hidden;
+    width: 295px;
+    height: 295px;
+	border-radius:50%;
+    position: relative;
+}
+#viewbox .wrapper {
+    position: relative;
+	border-radius:50%;
+}
+#viewbox img {
+    width: 100%;
+    height: 100%;
+	border-radius:50%;
+}
+#baker{
+	width: 295px !important;
+	height: 295px !important;
+}
