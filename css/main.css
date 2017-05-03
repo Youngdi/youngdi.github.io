@@ -1,3 +1,9 @@
+@import url("title.css");
+@import url("coin.css");
+@import url("bar.css");
+@import url("stopButton.css");
+@import url("card.css");
+
 body {
 	margin: auto;
 	background: #222;
