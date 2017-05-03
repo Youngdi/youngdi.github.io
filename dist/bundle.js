@@ -19796,8 +19796,6 @@ module.exports = g;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Rx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_Rx__);
 
 
-const colors = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19];
-const name = ['blue', 'red', 'yellow', 'green', 'black', 'white', 'gray', 'pink', '#3D262A', '#127C56'];
 const nameList = [
     { src: './images/1.jpg', name: '史考特' },
     { src: './images/2.jpg', name: '立涵' },
@@ -19834,7 +19832,7 @@ const start = document.getElementById('arm');
 const stop = document.getElementById('stop');
 const startClick = __WEBPACK_IMPORTED_MODULE_0_rxjs_Rx___default.a.Observable.fromEvent(start, 'click');
 const stopClick = __WEBPACK_IMPORTED_MODULE_0_rxjs_Rx___default.a.Observable.fromEvent(stop, 'click');
-const timer = speed => __WEBPACK_IMPORTED_MODULE_0_rxjs_Rx___default.a.Observable.timer(100 + speed);
+const timer = speed => __WEBPACK_IMPORTED_MODULE_0_rxjs_Rx___default.a.Observable.timer(speed);
 const source = RandomNumbers => __WEBPACK_IMPORTED_MODULE_0_rxjs_Rx___default.a.Observable
     .interval(100)
     .take(RandomNumbers)
@@ -19843,29 +19841,43 @@ const source = RandomNumbers => __WEBPACK_IMPORTED_MODULE_0_rxjs_Rx___default.a.
     .takeUntil(stopClick)
     .do({
       next: (e) => {
-        // const slot = Math.floor(Math.random() * 20);
-        // const top = -slot * 300;
         const top = e * -300;
-        if ($('#slotmachine img').length < 50) {
+        const imgNumbers = $('#slotmachine img').length;
+        let lastNumber = localStorage.getItem('lastNumber');
+        if (imgNumbers == 1) {
+          localStorage.setItem('firstTime', true);
+        }
+        if (localStorage.getItem('firstTime') == 'true') {
           const imgElement = document.createElement('img');
           imgElement.src = nameList[e % 30].src;
           imgElement.name = nameList[e % 30].name;
           imgElement.class = 'color';
           document.getElementById('slotmachine').appendChild(imgElement);
+          localStorage.setItem("countLastNumber", e % 30);
+        } else {
+          if (imgNumbers < 60) {
+            const imgElement = document.createElement('img');
+            imgElement.src = nameList[(e + (+lastNumber) +1) % 30].src;
+            imgElement.name = nameList[(e + (+lastNumber) +1) % 30].name;
+            imgElement.class = 'color';
+            document.getElementById('slotmachine').appendChild(imgElement);
+            localStorage.setItem("countLastNumber", (e + (+lastNumber) +1) % 30);
+          }
         }
-        TweenLite.to($('#slotmachine'), 2.5, { ease: Bounce.easeOut, y: top - 300 });
+        if (imgNumbers < 20) {
+          TweenLite.to($('#slotmachine'), 1 , { ease: Bounce.easeOut, y: top - 300 });
+        } else if (imgNumbers > 20 && imgNumbers < 30){
+          TweenLite.to($('#slotmachine'), 1.5 , { ease: Bounce.easeOut, y: top - 300 });
+        } else {
+          TweenLite.to($('#slotmachine'), 2 , { ease: Bounce.easeOut, y: top - 300 });
+        }
         $('.colorRed').removeClass('colorRed');
-        // const maxNum = e;
-        // const minNum = 0;
-        // const index = Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;
-        // $('#reel')[0].src = nameList[index % nameList.length].src;
-
-        // $(`#circle_0${colors[index]}`).addClass('colorRed');
         $(`#circle_0${e % 30}`).addClass('colorRed');
       },
       complete: () => {
+        localStorage.setItem("lastNumber", localStorage.getItem("countLastNumber"));
+        localStorage.setItem("firstTime", false);
         $('#arm').removeClass('disabledButton');
-        // TweenLite.to($('#slotmachine'), 2.5, { ease: Bounce.easeOut, y: top });
         setTimeout(() => {
           $('.front').css("background", `url(${$('.colorRed')[0].src})`);
           alert($('.colorRed')[0].name);
@@ -19877,9 +19889,8 @@ startClick
     $('.front').css("background", `url(./images/question.jpg)`);
     $('#arm').addClass('clicked');
     $('#arm')[0].disabled = true;
-    //setTimeout(() => { arm.removeClass; }, 500);
     TweenLite.to($('#slotmachine'), 0.5, { ease: Power0.easeNone, y: 0 });
-    const RandomNumbers = Math.floor(Math.random() * 10) + 30;
+    const RandomNumbers = Math.floor(Math.random() * 10) + 40;
     return source(RandomNumbers);
   })
   .delay(1000)
