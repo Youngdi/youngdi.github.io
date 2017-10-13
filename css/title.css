@@ -177,6 +177,10 @@ header {
   -webkit-animation-delay: 3.9s;
           animation-delay: 4.0s;
 }
+.sixth span:nth-child(9) {
+  -webkit-animation-delay: 4.0s;
+          animation-delay: 4.1s;
+}
 
 @-webkit-keyframes titleShow {
   0% {
