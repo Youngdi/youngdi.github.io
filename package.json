@@ -24,7 +24,7 @@
     "style-loader": "^0.17.0",
     "uglify-js": "^2.8.22",
     "url-loader": "^0.5.8",
-    "webpack": "fulls1z3/webpack#v2.1.0-beta.27-harmony",
+    "webpack": "^2.6.0",
     "webpack-dev-server": "^2.4.5"
   },
   "scripts": {
@@ -42,6 +42,6 @@
   },
   "homepage": "https://github.com/youngdi",
   "engines": {
-    "node": "7.4.0"
+    "node": "8.4.0"
   }
 }
