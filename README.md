@@ -1,3 +1,1 @@
-# YoungDi's github page 
-
-Youngdi [youngdi.github.io]
+# [YoungDi's github page](https://youngdi.github.io)
