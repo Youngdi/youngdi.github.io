@@ -15,6 +15,8 @@ preloadImg('./images/7.jpg');
 preloadImg('./images/8.jpg');
 preloadImg('./images/9.jpg');
 preloadImg('./images/10.jpg');
+preloadImg('./images/question.jpg');
+preloadImg('./images/baker.jpg');
 
 const nameList = [
     { src: './images/1.jpg', name: '史考特' },
