@@ -6434,18 +6434,18 @@ function preloadImg (image) {
   img.src = image;
 }
   
-preloadImg('./images/1.jpg');
-preloadImg('./images/2.jpg');
-preloadImg('./images/3.jpg');
-preloadImg('./images/4.jpg');
-preloadImg('./images/5.jpg');
-preloadImg('./images/6.jpg');
-preloadImg('./images/7.jpg');
-preloadImg('./images/8.jpg');
-preloadImg('./images/9.jpg');
-preloadImg('./images/10.jpg');
-preloadImg('./images/question.jpg');
-preloadImg('./images/baker.jpg');
+// preloadImg('./images/1.jpg');
+// preloadImg('./images/2.jpg');
+// preloadImg('./images/3.jpg');
+// preloadImg('./images/4.jpg');
+// preloadImg('./images/5.jpg');
+// preloadImg('./images/6.jpg');
+// preloadImg('./images/7.jpg');
+// preloadImg('./images/8.jpg');
+// preloadImg('./images/9.jpg');
+// preloadImg('./images/10.jpg');
+// preloadImg('./images/question.jpg');
+// preloadImg('./images/baker.jpg');
 
 const nameList = [
     { src: './images/1.jpg', name: '史考特' },
