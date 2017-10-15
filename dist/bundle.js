@@ -6429,6 +6429,22 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_rxjs_Rx___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_rxjs_Rx__);
 
 
+function preloadImg (image) {
+  var img = new Image();
+  img.src = image;
+}
+  
+preloadImg('./images/1.jpg');
+preloadImg('./images/2.jpg');
+preloadImg('./images/3.jpg');
+preloadImg('./images/4.jpg');
+preloadImg('./images/5.jpg');
+preloadImg('./images/6.jpg');
+preloadImg('./images/7.jpg');
+preloadImg('./images/8.jpg');
+preloadImg('./images/9.jpg');
+preloadImg('./images/10.jpg');
+
 const nameList = [
     { src: './images/1.jpg', name: '史考特' },
     { src: './images/2.jpg', name: '立涵' },
