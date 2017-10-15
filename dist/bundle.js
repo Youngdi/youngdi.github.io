@@ -6433,7 +6433,14 @@ function preloadImg (image) {
   var img = new Image();
   img.src = image;
 }
-  
+window.addEventListener('load', function(){
+  var allimages= document.getElementsByTagName('img');
+  for (var i=0; i<allimages.length; i++) {
+      if (allimages[i].getAttribute('data-src')) {
+          allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
+      }
+  }
+}, false);
 // preloadImg('./images/1.jpg');
 // preloadImg('./images/2.jpg');
 // preloadImg('./images/3.jpg');
