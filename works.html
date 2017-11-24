@@ -38,11 +38,11 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto mt-4">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="index.html">關於睿摯
                         </a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a class="nav-link" href="works.html">作品介紹</a>
                     </li>
                     <li class="nav-item">
@@ -58,28 +58,90 @@
         </div>
     </nav>
 
-    <section class="container py-5 content-pr bg-wood ">
-        <div class="row">
-            <div class="col-md-6 bg-cover photo-position photo-maso "></div>
+    <!-- album -->
+    <div class="album text-muted">
+        <div class="container">
+            <div class="row">
+                <div class="card " data-id="0">
+                    <img src="img/product_1.png">
+                </div>
+                <div class="card" data-id="1">
+                    <img src="img/product_2.png">
+                </div>
+                <div class="card" data-id="2">
+                    <img src="img/product_3.png">
+                </div>
+                <div class="card" data-id="4">
+                    <img src="img/product_4.png">
+                </div>
+                <div class="card" data-id="5">
+                    <img src="img/product_5.png">
+                </div>
+                <div class="card" data-id="6">
+                    <img src="img/product_6.png">
+                </div>
+                <div class="card" data-id="7">
+                    <img src="img/product_7.png">
+                </div>
+                <div class="card" data-id="8">
+                    <img src="img/product_8.png">
+                </div>
+                <div class="card" data-id="9">
+                    <img src="img/product_9.png">
+                </div>
+                <div class="card" data-id="10">
+                    <img src="img/product_10.png">
+                </div>
+                <div class="card" data-id="11">
+                    <img src="img/product_11.png">
+                </div>
+                <div class="card" data-id="12">
+                    <img src="img/product_12.png">
+                </div>
+                <div class="card" data-id="13">
+                    <img src="img/product_13.png">
+                </div>
+                <div class="card" data-id="14">
+                    <img src="img/product_14.png">
+                </div>
+                <div class="card" data-id="15">
+                    <img src="img/product_15.png">
+                </div>
+                <div class="card" data-id="16">
+                    <img src="img/product_16.png">
+                </div>
+                <div class="card" data-id="17">
+                    <img src="img/product_17.png">
+                </div>
+
+            </div>
         </div>
-        <div class="container ">
-            <div class="row justify-content-end text-white text-md-dark text-center ">
-                <div class="col-md-6 pt-md-5 py-10">
-                    <div class="bg-md-dark bg-md-white">
-                        <h3 class="mb-5 " id="text-1">關 於 睿 摯</h3>
-                        <p class="h5 mb-3" id="text-2">手執摯 代表著創作者對手工的執著與熱情</p>
-                        <p class="h5 mb-3" id="text-2">這是ㄧ種溫度也是ㄧ種態度</p>
-                        <p class="h5 mb-3" id="text-2">我是ㄧ名藝術工作者</p>
-                        <p class="h5 mb-3" id="text-2">創造出的作品是對於藝術追求的體現</p>
-                        <p class="h5 mb-3" id="text-2">也是對無止盡道路的永久追尋與渴望</p>
-                        <p class="h5 mb-3" id="text-2">睿摯工作室，創造著木雕木作藝術</p>
-                        <p class="h5 mb-3" id="text-2">在這個越來越少人投入的產業裡</p>
-                        <p class="h5 mb-3" id="text-2">帶給你們關於我對藝術的執著。</p>
+    </div>
+    <!-- / album -->
+
+    <!-- modal -->
+    <div class="modal fade " id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content bg-tra">
+                <div class="modal-body">
+                    <div class="row close-item">
+                        <div class="image col-md-12">&nbsp;</div>
+                        <div class="info">
+                            <div class="row ">
+                                <div class="header col-12">
+                                    <button type="button" class="close btn-block bg-light text-dark" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    <!-- / modal -->
+
     <footer class="bg-brown py-4 mt-3 text-light fixed-bottom">
         <div class="container d-flex justify-content-between">
             <div>© Copyright 2017 南瓜設計</div>
@@ -91,36 +153,6 @@
         </div>
 
     </footer>
-    <script>
-    function preloadImg (image) {
-      var img = new Image();
-      img.src = image;
-    }
-    window.addEventListener('load', function(){
-      var allimages= document.getElementsByTagName('img');
-      for (var i=0; i<allimages.length; i++) {
-          if (allimages[i].getAttribute('data-src')) {
-              allimages[i].setAttribute('src', allimages[i].getAttribute('data-src'));
-          }
-      }
-    }, false);
-    preloadImg('./img/product_1.png');
-    preloadImg('./img/product_2.png');
-    preloadImg('./img/product_3.png');
-    preloadImg('./img/product_4.png');
-    preloadImg('./img/product_5.png');
-    preloadImg('./img/product_6.png');
-    preloadImg('./img/product_7.png');
-    preloadImg('./img/product_8.png');
-    preloadImg('./img/product_9.png');
-    preloadImg('./img/product_11.png');
-    preloadImg('./img/product_12.png');
-    preloadImg('./img/product_13.png');
-    preloadImg('./img/product_14.png');
-    preloadImg('./img/product_15.png');
-    preloadImg('./img/product_16.png');
-    preloadImg('./img/product_17.png');
-    </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -129,6 +161,7 @@
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
         crossorigin="anonymous"></script>
+    <script src="aset/js/all.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,240 @@
+body{
+    font-family: "Microsoft JhengHei";
+    background-image: url("../../img/bg.jpg");
+}
+.bg-wood{
+    background-image: url("../../img/bg2.jpg");
+}
+.bg-wood2{
+    background-color: rgba(255, 255, 255, 0.322);
+    border-radius:20px;
+}
+.bg-brown{
+    background-color: #210d05;	
+}
+.photo-maso{
+    background-image: url("../../img/maso2.png");
+}
+.bg-cover{
+    background-size: cover;
+    background-position: center center;
+}
+.content-pr{
+    position: relative;
+}
+.photo-position{
+    position: absolute;
+    top: 0;
+    bottom: 0;    
+}
+.py-10{
+    padding-bottom: 3rem;
+}
+.bg-md-dark{
+    background-color: rgba(24, 24, 24, 0.411);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius:10px;
+}
+.bg-tra{
+    background-color: transparent !important;
+}
+
+.jumbotron {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+.jumbotron p:last-child {
+  margin-bottom: 0;
+}
+
+.jumbotron-heading {
+  font-weight: 300;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+.album {
+  min-height: 100vh;
+  padding-top: 3rem;
+  padding-bottom: 6rem;
+}
+
+.card {
+  float: left;
+  width: 100%;
+  padding: .75rem;
+  border: 1 solid #1616163d;
+  background-color: rgba(255, 255, 255, 0.472);
+}
+
+.card img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.card-text {
+  font-size: 85%;
+}
+
+
+.modal-dialog {
+  max-width: none;
+  
+}
+
+.modal-body {
+  padding: 0 15px;
+}
+
+.modal .image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: calc( 100vh - 60px );
+  border-radius: .2rem .2rem 0 0;
+}
+
+.modal .header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.modal .header h2 {
+  margin: 0;
+}
+
+.modal .close {
+  padding-top: 5px;
+  padding-bottom:5px;
+}
+
+.modal .meta {
+  color: darkgray;
+  font-size: 12px;
+}
+
+.modal .thumbs {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.modal .thumb {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50px; 
+  height: 50px; 
+  margin-right: 10px; 
+}
+
+.modal.fade .modal-dialog {
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0); // IE9 only
+  transform: translate(0, 0);
+ }
+.modal-content{
+    border: none;
+}
+.close-item{
+    display: block;
+}
+#text-1 {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+#text-2 {
+    animation: fadein 4s;
+    -moz-animation: fadein 4s; /* Firefox */
+    -webkit-animation: fadein 4s; /* Safari and Chrome */
+    -o-animation: fadein 4s; /* Opera */
+}
+#text-3 {
+    animation: fadein 6s;
+    -moz-animation: fadein 6s; /* Firefox */
+    -webkit-animation: fadein 6s; /* Safari and Chrome */
+    -o-animation: fadein 6s; /* Opera */
+}
+.text-decoration-none{
+    text-decoration: none !important;
+} 
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (min-width: 576px) {
+.modal-dialog {
+	margin: 30px;
+}
+.card{
+    width: 50%;
+}
+}
+
+@media (min-width: 768px) {
+    .modal .image {
+        border-radius: .2rem 0 0 .2rem;
+    }
+    .card{
+        width: 33%;
+    }
+    .text-md-dark{
+        color: rgb(19, 19, 19) !important;
+    }
+    .bg-md-dark{
+        background-color: transparent;
+    }   
+    .py-10{
+        padding-bottom: 20rem;
+    }
+    .bg-md-white{
+        background-color: rgba(255, 255, 255, 0.479);
+        padding-top: 1rem;
+        border-radius:10px;
+    }  
+}
+
+@media (min-width: 992px) {
+  .modal-dialog {
+	margin: 30px auto;
+    max-width: 932px;
+}
+}
