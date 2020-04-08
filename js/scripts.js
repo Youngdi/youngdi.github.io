@@ -48,17 +48,8 @@ $(function () {
         $portfolioModal = $('#portfolio-modal');
 
     // get portfolio data
-    var portfolioData;
-
-    $.ajax({
-        url: 'js/portfolio.json',
-        dataType: 'json',
-        success: function (data) {
-            portfolioData = data;
-
-            createPortfolio();
-        }
-    });
+    var portfolioData = PROTFOLIO;
+    setTimeout(() => createPortfolio(), 0)
 
     var itemTemplate = $('#item-template').html(),
         modalTemplate = $('#modal-template').html();
@@ -242,3 +233,413 @@ function disableoverflow(){
     if(!$(event.target).is('.contentScroll *, .contentScroll') || $('.contentScroll').scrollTop() == 0)
         event.preventDefault();
 }
+
+
+
+
+
+
+const PROTFOLIO = [
+  {
+      "title": "OhDeer Games",
+      "description": "An experimental page created for a new gaming company. Received an awwwards.com honorable mention.",
+      "url": "ohdeergames.com",
+      "images": {
+          "thumb": "thumb--ohdeer",
+          "full": "ohdeergames.jpg"
+      },
+      "responsibilities": [
+          {
+              "title": "Website",
+              "points": [
+                  "Web design",
+                  "Front end development",
+                  "Custom JS components",
+                  "Optimised animation",
+                  "Fully responsive design"
+              ]
+          }
+      ]
+  },
+  {
+      "title": "hey messenger",
+      "description": "An interactive one page site created for a new secure messaging app. The focus was to showcase information in an engaging, interactive way.",
+      "url": "hey-messenger.com",
+      "images": {
+          "thumb": "thumb--hey",
+          "full": "hey.jpg"
+      },
+      "responsibilities": [
+          {
+              "title": "Website",
+              "points": [
+                  "Website design",
+                  "Front end development",
+                  "Custom JS components",
+                  "Optimised animation",
+                  "Fully responsive design"
+              ]
+          }
+      ]
+  },
+  {
+      "title": "Digital Asset Group",
+      "description": "An interactive one page site created for a technology company.",
+      "url": "digitalassetgroup.com.au",
+      "images": {
+          "thumb": "thumb--dag",
+          "full": "dag.jpg"
+      },
+      "responsibilities": [
+          {
+              "title": "Website",
+              "points": [
+                  "Brand identity",
+                  "Website design",
+                  "Front end development",
+                  "Custom JS components",
+                  "Optimised animation",
+                  "Fully responsive design"
+              ]
+          }
+      ]
+  },
+  {
+      "title": "Wotif.com",
+      "description": "Continuous delivery for a leading Australian online travel brand.",
+      "url": "wotif.com",
+      "images": {
+          "thumb": "thumb--wotif",
+          "full": "wotif.jpg"
+      },
+      "responsibilities": [
+          {
+              "title": "Website",
+              "points": [
+                  "Front end development for the new home page and accommodation booking flow",
+                  "Front end development for the packages booking flow",
+                  "Custom JS components",
+                  "Optimised user interaction",
+                  "Responsive design"
+              ]
+          }
+      ]
+  },
+  {
+      "title": "DRoP Challenge",
+      "description": "A fun landing page for an upcoming iOS game that needed to provide some teaser entertainment.",
+      "images": {
+          "thumb": "thumb--drop",
+          "full": "drop.jpg"
+      },
+      "responsibilities": [
+          {
+              "title": "Website",
+              "points": [
+                  "Front end development",
+                  "Custom JS components",
+                  "Optimised animation",
+                  "Fully responsive design"
+              ]
+          }
+      ]
+  },
+  {
+      "title": "HiDow",
+      "description": "A sports and remedial therapy product manufacturer and international supplier. HiDow required a complete brand overhaul for multiple international websites and products to refresh their corporate image.",
+      "url": "www.hidow.com.au",
+      "images": {
+          "thumb": "thumb--hidow",
+          "full": "hidow.jpg"
+      },
+      "responsibilities": [
+          {
+              "title": "Website",
+              "points": [
+                  "Complete redesign of online presence",
+                  "Custom coded Magento e-commerce theme",
+                  "Content rewriting"
+              ]
+          },
+          {
+              "title": "Product iPhone App",
+              "points": [
+                  "Complete user interface design"
+              ]
+          },
+          {
+              "title": "Print Media",
+              "points": [
+                  "Product photo retouching",
+                  "General marketing material"
+              ]
+          }
+      ]
+  },
+  {
+      "title": "Hunt Education",
+      "description": "An Australian migration firm that required a educational course enrollment platform.",
+      "url": "www.hunteducation.com",
+      "images": {
+          "thumb": "thumb--hunteducation",
+          "full": "hunteducation.jpg"
+      },
+      "responsibilities": [
+          {
+              "title": "Website",
+              "points": [
+                  "Custom coded Magento e-commerce theme",
+                  "Front end development",
+                  "Adaptive design",
+                  "CMS"
+              ]
+          }
+      ]
+  },
+  {
+      "title": "Hunt Migration",
+      "description": "An Australian migration firm that required a rebrand for their high traffic website.",
+      "url": "www.huntmigration.com",
+      "images": {
+          "thumb": "thumb--hunt",
+          "full": "hunt.jpg"
+      },
+      "responsibilities": [
+          {
+              "title": "Website",
+              "points": [
+                  "Custom coded Magento e-commerce theme",
+                  "Front end development",
+                  "Adaptive design",
+                  "CMS",
+                  "Custom jQuery interactive hero pieces",
+                  "Social media feeds"
+              ]
+          }
+      ]
+  },
+  {
+      "title": "Just Digital People",
+      "description": "An awesome new recruitment company that needed a website to match.",
+      "images": {
+          "thumb": "thumb--jdp",
+          "full": "jdp.jpg"
+      },
+      "responsibilities": [
+          {
+              "title": "Website",
+              "points": [
+                  "Front end development",
+                  "Adaptive design",
+                  "CMS",
+                  "Event listings",
+                  "Profiles",
+                  "Custom jQuery interactive hero piece",
+                  "Social media feeds"
+              ]
+          }
+      ]
+  },
+  {
+      "title": "Toppik Australia",
+      "description": "An Australian hair-loss solution company that required an e-commerce platform to sell their product to the general public.",
+      "url": "www.toppik.com.au",
+      "images": {
+          "thumb": "thumb--toppik",
+          "full": "toppik.jpg"
+      },
+      "responsibilities": [
+          {
+              "title": "Website",
+              "points": [
+                  "Front end development",
+                  "Custom coded Magento e-commerce theme",
+                  "Responsive design",
+                  "E-commerce store",
+                  "CMS",
+                  "Custom jQuery interactive hero piece"
+              ]
+          }
+      ]
+  },
+  {
+      "title": "Time for Advice",
+      "description": "An Australian migration questions and answers website that required an online portal to communicate with customers in Australia and abroad.",
+      "images": {
+          "thumb": "thumb--tfa",
+          "full": "tfa.jpg"
+      },
+      "responsibilities": [
+          {
+              "title": "Website",
+              "points": [
+                  "Front end development",
+                  "Adaptive design",
+                  "CRM",
+                  "CMS",
+                  "Custom jQuery interactive hero piece"
+              ]
+          }
+      ]
+  },
+  {
+      "title": "Northern Inland Chiropractic",
+      "description": "An Australian chiropractic practice that required a high end brochure site to provide information about the company and founder.",
+      "images": {
+          "thumb": "thumb--nichiro",
+          "full": "nichiro.jpg"
+      },
+      "responsibilities": [
+          {
+              "title": "Website",
+              "points": [
+                  "Front end development",
+                  "Adaptive design",
+                  "Custom jQuery pieces implementing parallax design",
+                  "AJAX contact forms"
+              ]
+          }
+      ]
+  },
+  {
+      "title": "After Market",
+      "description": "An Australian company that provided after market services for the car industry. They required a cool brochure site to showcase their products.",
+      "images": {
+          "thumb": "thumb--aftermarket",
+          "full": "aftermarket.jpg"
+      },
+      "responsibilities": [
+          {
+              "title": "Website",
+              "points": [
+                  "Front end development",
+                  "Adaptive design",
+                  "Custom jQuery pieces",
+                  "AJAX contact forms"
+              ]
+          }
+      ]
+  },
+  {
+      "title": "Tevee",
+      "description": "A company that wanted to launch a new concept for free TV, anywhere, any time.",
+      "images": {
+          "thumb": "thumb--tevee",
+          "full": "tevee.jpg"
+      },
+      "responsibilities": [
+          {
+              "title": "Website",
+              "points": [
+                  "Front end development",
+                  "Responsive design",
+                  "Custom jQuery interactive pieces",
+                  "Extensive wireframing",
+                  "Multiple landing pages",
+                  "AJAX contact forms"
+              ]
+          }
+      ]
+  },
+  {
+      "title": "Every Month",
+      "description": "A unique e-commerce shopping model that required a funky web presence.",
+      "images": {
+          "thumb": "thumb--everymonth",
+          "full": "everymonth.jpg"
+      },
+      "responsibilities": [
+          {
+              "title": "Website",
+              "points": [
+                  "Front end development",
+                  "Adaptive design"
+              ]
+          }
+      ]
+  },
+  {
+      "title": "CHTrader",
+      "description": "A software company in the financial industry that required the development of a complete brand image and customer support management website.",
+      "url": "www.chtrader.net",
+      "images": {
+          "thumb": "thumb--cht",
+          "full": "cht.jpg"
+      },
+      "responsibilities": [
+          {
+              "title": "Website",
+              "points": [
+                  "Complete design of online presence",
+                  "Front end development",
+                  "CRM",
+                  "Online user guide",
+                  "Ticketing system and knowledge base",
+                  "Site news and email newsletter",
+                  "Historical data cron tasks"
+              ]
+          },
+          {
+              "title": "Print Media",
+              "points": [
+                  "Logo and corporate stationery design",
+                  "General marketing material",
+                  "User guide design and content layout"
+              ]
+          }
+      ]
+  },
+  {
+      "title": "Build Your Trading",
+      "description": "A software company in the financial industry that required the development of a complete brand image and customer support management website.",
+      "url": "www.buildyourtrading.net",
+      "images": {
+          "thumb": "thumb--byt",
+          "full": "byt.jpg"
+      },
+      "responsibilities": [
+          {
+              "title": "Website",
+              "points": [
+                  "Complete design of online presence",
+                  "Front end development",
+                  "Responsive design",
+                  "CRM",
+                  "Online user guide",
+                  "Ticketing system and knowledge base",
+                  "Site news and email newsletter",
+                  "Historical data cron tasks"
+              ]
+          },
+          {
+              "title": "Print Media",
+              "points": [
+                  "Logo and corporate stationery design",
+                  "General marketing material",
+                  "User guide design and content layout"
+              ]
+          }
+      ]
+  },
+  {
+      "title": "Octave Corporate Rentals",
+      "description": "A company that provides rental properties for energy related company employees in Queensland. They required a website that could display property listings and latest news, with a design that was in keeping with the corporate nature of their target market.",
+      "url": "www.octavecorporaterentals.com.au",
+      "images": {
+          "thumb": "thumb--octave",
+          "full": "octave.jpg"
+      },
+      "responsibilities": [
+          {
+              "title": "Website",
+              "points": [
+                  "Website design",
+                  "Front end development",
+                  "CMS",
+                  "Property listings and search",
+                  "Latest news feed"
+              ]
+          }
+      ]
+  }
+];
