@@ -241,12 +241,12 @@ function disableoverflow() {
 
 const PROTFOLIO = [
     {
-        "title": "OhDeer Games",
+        "title": "Notes Station 3",
         "description": "An experimental page created for a new gaming company. Received an awwwards.com honorable mention.",
-        "url": "ohdeergames.com",
+        "url": "www.qnap.com/solution/notes-station3/en/",
         "images": {
-            "thumb": "thumb--ohdeer",
-            "full": "ohdeergames.jpg"
+            "thumb": "thumb--ns3",
+            "full": "ns3.jpg"
         },
         "responsibilities": [
             {

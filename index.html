@@ -260,7 +260,7 @@
       <section class="container block block--portfolio">
         <a id="portfolio" class="anchor"></a>
 
-        <h2>Here's some of my work.</h2>
+        <h2>Here's some of my works.</h2>
         <p>
           Have a look through to see what I'm capable of. If you'd like to see
           more, or get more info about specific projects,
@@ -278,7 +278,9 @@
 
       <script id="item-template" type="text/html">
         <li class="portfolio__item">
-            <a {{#url}}href="https://{{url}}" target="_blank"{{/url}} class="show-modal" data-id="{{id}}"><span class="{{images.thumb}}"></span></a>
+            <a {{#url}}href="https://{{url}}" target="_blank"{{/url}} class="show-modal" data-id="{{id}}">
+              <span class="{{images.thumb}}"></span>
+            </a>
         </li>
       </script>
 
@@ -299,7 +301,7 @@
                 <p>{{description}}</p>
 
                 {{#url}}
-                    <a href="https://{{url}}" target="_blank"><i class="icon-link"></i>{{url}}</a>
+                    <a href="https://{{url}}" target="_blank"><i class="icon-link"></i>Check it out for more detail</a>
                 {{/url}}
 
                 <hr />
