@@ -1,186 +1,366 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js no-touch">
-    <head>
-        <meta charset="utf-8">
-        <title>Bill YoungDi</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+  <head>
+    <meta charset="utf-8" />
+    <title>Bill YoungDi</title>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+    />
 
-        <link rel="stylesheet" href="fonts/icon-font/css/icon-font.css" />
-        <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="fonts/icon-font/css/icon-font.css" />
+    <link rel="stylesheet" href="css/styles.css" />
 
-        <script src="js/libs/jquery-1.11.0.min.js"></script>
-        <script src="js/libs/jquery.easing.js"></script>
-        <script src="js/libs/jquery.scrollpath-custom.js"></script>
-        <script src="js/libs/fastclick.js"></script>
-        <script src="js/libs/mustache.js"></script>
-        <script src="js/scripts.js"></script>
+    <script src="js/libs/jquery-1.11.0.min.js"></script>
+    <script src="js/libs/jquery.easing.js"></script>
+    <script src="js/libs/jquery.scrollpath-custom.js"></script>
+    <script src="js/libs/fastclick.js"></script>
+    <script src="js/libs/mustache.js"></script>
+    <script src="js/scripts.js"></script>
 
-        <!--[if lt IE 9]>
-        <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
+    <!--[if lt IE 9]>
+      <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
 
-        <!-- fonts -->
-        <link href='https://fonts.googleapis.com/css?family=Loved+by+the+King|Oswald:700|Open+Sans:400,600' rel='stylesheet' type='text/css'>
-    </head>
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Loved+by+the+King|Oswald:700|Open+Sans:400,600"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
 
-    <body>
-        <div class="preloader">
-            <div class="preloader__icon">
-                <h1 class="preloader__title">Bill<br>YoungDi</h1>
-                <div class="preloader__progress"></div>
+  <body>
+    <div class="preloader">
+      <div class="preloader__icon">
+        <h1 class="preloader__title">Bill<br />YoungDi</h1>
+        <div class="preloader__progress"></div>
+      </div>
+    </div>
+    <div id="portfolio-modal" class="modal"></div>
+
+    <nav class="menu">
+      <div class="menu__inner container">
+        <i class="menu__icon icon-ellipsis"></i>
+
+        <ul class="menu__items">
+          <li class="menu__item">
+            <a class="internal" href="#intro">Hello</a>
+          </li>
+          <li class="menu__item">
+            <a class="internal" href="#about">About</a>
+          </li>
+          <li class="menu__item">
+            <a class="internal" href="#skills">Skills</a>
+          </li>
+          <li class="menu__item">
+            <a class="internal" href="#portfolio">Work</a>
+          </li>
+          <li class="menu__item">
+            <a class="internal" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <div class="menu__copyright">
+          &copy; <span class="current-year"></span> Bill YoungDi. All rights
+          reserved.
+        </div>
+      </div>
+    </nav>
+
+    <div id="scroll-view" class="wrapper">
+      <img class="item item--chair" src="images/items/chair.png" alt="" />
+
+      <section class="container block block--intro">
+        <a id="end" class="anchor"></a>
+        <a id="intro" class="anchor"></a>
+
+        <h1 class="preloader-position">Bill<br />YoungDi</h1>
+        <h2>Hello!</h2>
+
+        <p>
+          My name is Bill Yang and I'm a senior front end developer. I&nbsp;am
+          passionate about creating beautiful, responsive, useful and pixel
+          perfect websites, apps.
+        </p>
+        <p>Live beautiful <br />Dream passionately<br />Love compeletely</p>
+        <p>🇹🇼 Travel ✈️ Programmer 👨‍💻 Easygoing 🕺</p>
+        <p>
+          This is where I keep my
+          <a href="#portfolio" class="internal">online portfolio</a>. Feel free
+          to have a look around and
+          <a href="#contact" class="internal">get&nbsp;in&nbsp;touch</a>.
+        </p>
+
+        <p>
+          <a href="#about" class="internal handwriting"
+            >start scrolling<i class="arrow icon-down-big"></i
+          ></a>
+        </p>
+      </section>
+
+      <section class="container block block--about">
+        <a id="about" class="anchor"></a>
+
+        <h2>A bit about me...</h2>
+        <p>
+          I love to solve problems through IT stuff. Especially happy when I see
+          ppl use my apps. Since high school, I have made programming as my
+          career. Also, I like to share the gifts God had given me. I teach
+          teenagers how to program for 3 years at church.
+        </p>
+        <br />
+        <h3>Work experience:</h3>
+        <br />
+        <ul class="list">
+          <li class="list__item">
+            <i class="list__item__icon icon-plus"></i
+            ><a href="https://www.qnap.com/zh-tw/">(2016-2020)—QNAP</a>
+          </li>
+          <li class="list__item">
+            <i class="list__item__icon icon-plus"></i
+            ><a href="https://www.uiuxcafe.com/">(2018-2020)—UIUX Cafe</a>
+          </li>
+        </ul>
+        <br />
+        <h3>Degree:</h3>
+        <br />
+        <ul class="list">
+          <li class="list__item">
+            <i class="list__item__icon icon-plus"></i
+            ><a href="https://md.nutc.edu.tw/bin/home.php"
+              >(2014-2016)—Master at Department of Multimedia Design, NTCUST</a
+            >
+          </li>
+          <li class="list__item">
+            <i class="list__item__icon icon-plus"></i
+            ><a href="https://www.uiuxcafe.com/"
+              >(2010-2014)—Bachelor at Department of Computer and Communication
+              Engineering, NKUST</a
+            >
+          </li>
+        </ul>
+        <p>
+          <a href="#skills" class="internal handwriting"
+            ><i class="arrow icon-left-big"></i>on to skills</a
+          >
+        </p>
+      </section>
+
+      <img class="item item--pens" src="images/items/pens.png" alt="" />
+
+      <img class="item item--ipad" src="images/items/ipad.png" alt="" />
+
+      <section class="container block block--skills">
+        <a id="skills" class="anchor"></a>
+
+        <h2>Skills:</h2>
+
+        <h3>Programming</h3>
+        <ul class="list">
+          <li class="list__item">
+            <div>
+              <i class="list__item__icon icon-right"></i
+              ><a href="https://reactjs.org/">React(5Y)</a>,
+              <a href="https://reactnative.dev/">React Native(4Y)</a>,
+              <a href="https://nodejs.org/en/">Node.js(2Y)</a>,
+              <a href="https://ionicframework.com/">Ionic(1Y)</a>,
+              <a href="https://cordova.apache.org/">Cordova(1Y)</a>,
+              <a href="https://angularjs.org/">AngularJS(1Y)</a>
+            </div>
+          </li>
+          <li class="list__item">
+            <div>
+              <i class="list__item__icon icon-right"></i>HTML, JS, CSS, SCSS,
+              <a href="https://styled-components.com/">Styled-Components</a>,
+              <a href="https://www.typescriptlang.org/">TS</a>, FP,
+              <a href="https://ramdajs.com/">Ramda</a>, lodash,
+              <a href="https://rxjs-dev.firebaseapp.com/">RxJS</a>,
+              <a href="https://prosemirror.net/">Editor(ProseMirror)</a>
+            </div>
+          </li>
+          <li class="list__item">
+            <div>
+              <i class="list__item__icon icon-right"></i>GCP, AWS,
+              <a href="https://firebase.google.com/">Firebase</a>,
+              <a href="https://fastlane.tools/">Fastlane</a>,
+              <a href="https://strapi.io/">Strapi(CMS)</a>
+            </div>
+          </li>
+          <li class="list__item">
+            <div>
+              <i class="list__item__icon icon-right"></i>PWA app with
+              <a href="https://www.gatsbyjs.org/">Gatsby.js(SSR)</a>
+              , Docker, DevOps(CI/CD), Ansible, linux CMD
+            </div>
+          </li>
+          <li class="list__item">
+            <div>
+              <i class="list__item__icon icon-right"></i>Chatbot(Line,
+              Messenger, <a href="https://dialogflow.com/">Dialogflow</a>)
+            </div>
+          </li>
+          <li class="list__item">
+            <div>
+              <i class="list__item__icon icon-right"></i>E2E Test(Puppeteer),
+              Crawler(Node.js)
+            </div>
+          </li>
+          <li class="list__item">
+            <div>
+              <i class="list__item__icon icon-right"></i>Version control using
+              git
+            </div>
+          </li>
+          <li class="list__item">
+            <div>
+              <i class="list__item__icon icon-right"></i>Responsive and adaptive
+              web user interfaces
+            </div>
+          </li>
+          <li class="list__item">
+            <div>
+              <i class="list__item__icon icon-right"></i>Standards and
+              cross-browser compliant code
+            </div>
+          </li>
+          <li class="list__item">
+            <div>
+              <i class="list__item__icon icon-right"></i>Experience with
+              database design (SQL, noSQL, DBMS(Cloud firestore)
+            </div>
+          </li>
+          <li class="list__item">
+            <div>
+              <i class="list__item__icon icon-right"></i>Experience with
+              teaching <a href="https://scratch.mit.edu/">Scratch</a>,
+              <a href="https://microbit.org/code/">Mirco:bit</a>,
+              <a href="https://edu.bloxelsbuilder.com/">Bloxels</a>
+            </div>
+          </li>
+        </ul>
+
+        <h3>Language</h3>
+        <ul class="list">
+          <li class="list__item">
+            <i class="list__item__icon icon-right"></i>Chinese(Native)
+          </li>
+          <li class="list__item">
+            <i class="list__item__icon icon-right"></i>English(Fluent)
+          </li>
+        </ul>
+
+        <p>
+          <a href="#portfolio" class="internal handwriting"
+            >view portfolio<i class="arrow icon-down-big"></i
+          ></a>
+        </p>
+      </section>
+
+      <section class="container block block--portfolio">
+        <a id="portfolio" class="anchor"></a>
+
+        <h2>Here's some of my work.</h2>
+        <p>
+          Have a look through to see what I'm capable of. If you'd like to see
+          more, or get more info about specific projects,
+          <a href="#contact" class="internal">drop me a line</a>.
+        </p>
+
+        <p>
+          <a href="#contact" class="internal handwriting"
+            >get in touch<i class="arrow icon-right-big"></i
+          ></a>
+        </p>
+      </section>
+
+      <ul id="portfolio-items" class="portfolio container"></ul>
+
+      <script id="item-template" type="text/html">
+        <li class="portfolio__item">
+            <a {{#url}}href="https://{{url}}" target="_blank"{{/url}} class="show-modal" data-id="{{id}}"><span class="{{images.thumb}}"></span></a>
+        </li>
+      </script>
+
+      <script id="modal-template" type="text/html">
+        <div class="modal__content">
+            <div class="modal__hero">
+                <a {{#url}}href="https://{{url}}" target="_blank" {{/url}}class="modal__hero__bg" style="background-image: url('images/portfolio/{{images.full}}');"></a>
+
+                <i class="icon-load"></i>
+
+                <img src="images/portfolio/{{images.full}}" alt="{{title}}">
+            </div>
+
+            <div class="modal__body">
+                <a class="modal__close icon-cancel"></a>
+
+                <h2>{{title}}</h2>
+                <p>{{description}}</p>
+
+                {{#url}}
+                    <a href="https://{{url}}" target="_blank"><i class="icon-link"></i>{{url}}</a>
+                {{/url}}
+
+                <hr />
+
+                {{#responsibilities.length}}
+                    <h3>Responsibilities</h3>
+                {{/responsibilities.length}}
+
+                {{#responsibilities}}
+                    <h4>{{title}}</h4>
+                    <ul class="list">
+                        {{#points}}
+                            <li class="list__item"><i class="list__item__icon icon-right"></i>{{.}}</li>
+                        {{/points}}
+                    </ul>
+                {{/responsibilities}}
             </div>
         </div>
-        <div id="portfolio-modal" class="modal"></div>
+      </script>
 
-        <nav class="menu">
-            <div class="menu__inner container">
-                <i class="menu__icon icon-ellipsis"></i>
+      <img class="item item--iphone" src="images/items/iphone.png" alt="" />
 
-                <ul class="menu__items">
-                    <li class="menu__item"><a class="internal" href="#intro">Hello</a></li>
-                    <li class="menu__item"><a class="internal" href="#about">About</a></li>
-                    <li class="menu__item"><a class="internal" href="#skills">Skills</a></li>
-                    <li class="menu__item"><a class="internal" href="#portfolio">Work</a></li>
-                    <li class="menu__item"><a class="internal" href="#contact">Contact</a></li>
-                </ul>
+      <section class="container block block--contact">
+        <a id="contact" class="anchor"></a>
 
-                <div class="menu__copyright">&copy; <span class="current-year"></span> Bill YoungDi. All rights reserved.</div>
-            </div>
-        </nav>
+        <h2>Get in touch!</h2>
 
-        <div id="scroll-view" class="wrapper">
-            <img class="item item--chair" src="images/items/chair.png" alt="" />
+        <p>
+          Contact me on one of the following and I'll get back to you as soon as
+          I can. In the meantime, feel free to have a look around.
+        </p>
 
-            <section class="container block block--intro">
-                <a id="end" class="anchor"></a>
-                <a id="intro" class="anchor"></a>
+        <p>
+          <a
+            href="mailto:hello@jacq.com.au?subject=Enquiry from JacquelineHardy.com.au"
+            class="button"
+            title="Email"
+            ><i class="icon-mail"></i
+          ></a>
+          <a
+            href="http://au.linkedin.com/pub/jacqueline-hardy/69/424/876/"
+            target="_blank"
+            class="button"
+            title="LinkedIn"
+            ><i class="icon-linkedin"></i
+          ></a>
+          <a
+            href="https://github.com/j4cq"
+            target="_blank"
+            class="button"
+            title="GitHub"
+            ><i class="icon-github"></i
+          ></a>
+        </p>
 
-                <h1 class="preloader-position">Bill<br>YoungDi</h1>
-                <h2>Hello!</h2>
-
-                <p>My name is Bill Yang and I'm a front end web developer. I&nbsp;am passionate about creating beautiful, responsive and pixel perfect websites.</p>
-
-                <p>This is where I keep my <a href="#portfolio" class="internal">online portfolio</a>. Feel free to have a look around and <a href="#contact" class="internal">get&nbsp;in&nbsp;touch</a>.</p>
-
-                <p><a href="#about" class="internal handwriting">start scrolling<i class="arrow icon-down-big"></i></a></p>
-            </section>
-
-            <section class="container block block--about">
-                <a id="about" class="anchor"></a>
-
-                <h2>A bit about me...</h2>
-
-                <p>Right from my first day in high school IT, I knew that I loved everything about websites. One IT degree, <span class="start-year"></span> years of professional experience and many caffeine-fuelled late nights later, I am happy to say that I've been able to turn my passion into a career.</p>
-
-                <p>These days, I work together with designers to make stunning, responsive, pixel-perfect designs for desktop, tablet and mobile devices. This site is just a small example of what I love to do.</p>
-
-                <p><a href="#skills" class="internal handwriting"><i class="arrow icon-left-big"></i>on to skills</a></p>
-            </section>
-
-            <img class="item item--pens" src="images/items/pens.png" alt="" />
-
-            <img class="item item--ipad" src="images/items/ipad.png" alt="" />
-
-            <section class="container block block--skills">
-                <a id="skills" class="anchor"></a>
-
-                <h2>Skills:</h2>
-
-                <h3>Programming</h3>
-                <ul class="list">
-                    <li class="list__item"><div><i class="list__item__icon icon-right"></i>React(5Y), React Native(4Y), Ionic(1Y), Cordova(1Y), Angular(1Y)</div></li>
-                    <li class="list__item"><div><i class="list__item__icon icon-right"></i>HTML, CSS, SCSS, Styled-Components, TS, FP, Ramda, lodash, <a href="https://prosemirror.net/">Editor(ProseMirror)</a></div></li>
-                    <li class="list__item"><div><i class="list__item__icon icon-right"></i>Node.js, GCP, AWS, Firebase, Fastlane, Strapi(CMS)</div></li>
-                    <li class="list__item"><div><i class="list__item__icon icon-right"></i>PWA app with Gatsby(SSR), Docker, DevOps(CI/CD), Ansible</div></li>
-                    <li class="list__item"><div><i class="list__item__icon icon-right"></i>Chatbot(Line, Messenger)</div></li>
-                    <li class="list__item"><div><i class="list__item__icon icon-right"></i>E2E Test(Puppeteer), Crawler(Node.js)</div></li>
-                    <li class="list__item"><div><i class="list__item__icon icon-right"></i>Responsive and adaptive web user interfaces</div></li>
-                    <li class="list__item"><div><i class="list__item__icon icon-right"></i>Standards and cross-browser compliant code</div></li>
-                    <li class="list__item"><div><i class="list__item__icon icon-right"></i>Experience with database design (SQL, noSQL, real time database(cloud firestore)</div></li>
-                    <li class="list__item"><div><i class="list__item__icon icon-right"></i>Version control using git</div></li>
-                </ul>
-
-                <h3>Language</h3>
-                <ul class="list">
-                  <li class="list__item"><i class="list__item__icon icon-right"></i>Chinese(Native)</li>
-                    <li class="list__item"><i class="list__item__icon icon-right"></i>English(Fluent)</li>
-                </ul>
-
-                <p><a href="#portfolio" class="internal handwriting">view portfolio<i class="arrow icon-down-big"></i></a></p>
-            </section>
-
-            <section class="container block block--portfolio">
-                <a id="portfolio" class="anchor"></a>
-
-                <h2>Here's some of my work.</h2>
-                <p>Have a look through to see what I'm capable of. If you'd like to see more, or get more info about specific projects, <a href="#contact" class="internal">drop me a line</a>.</p>
-
-                <p><a href="#contact" class="internal handwriting">get in touch<i class="arrow icon-right-big"></i></a></p>
-            </section>
-
-            <ul id="portfolio-items" class="portfolio container"></ul>
-
-            <script id="item-template" type="text/html">
-                <li class="portfolio__item">
-                    <a {{#url}}href="https://{{url}}" target="_blank"{{/url}} class="show-modal" data-id="{{id}}"><span class="{{images.thumb}}"></span></a>
-                </li>
-            </script>
-
-            <script id="modal-template" type="text/html">
-                <div class="modal__content">
-                    <div class="modal__hero">
-                        <a {{#url}}href="https://{{url}}" target="_blank" {{/url}}class="modal__hero__bg" style="background-image: url('images/portfolio/{{images.full}}');"></a>
-
-                        <i class="icon-load"></i>
-
-                        <img src="images/portfolio/{{images.full}}" alt="{{title}}">
-                    </div>
-
-                    <div class="modal__body">
-                        <a class="modal__close icon-cancel"></a>
-
-                        <h2>{{title}}</h2>
-                        <p>{{description}}</p>
-
-                        {{#url}}
-                            <a href="https://{{url}}" target="_blank"><i class="icon-link"></i>{{url}}</a>
-                        {{/url}}
-
-                        <hr />
-
-                        {{#responsibilities.length}}
-                            <h3>Responsibilities</h3>
-                        {{/responsibilities.length}}
-
-                        {{#responsibilities}}
-                            <h4>{{title}}</h4>
-                            <ul class="list">
-                                {{#points}}
-                                    <li class="list__item"><i class="list__item__icon icon-right"></i>{{.}}</li>
-                                {{/points}}
-                            </ul>
-                        {{/responsibilities}}
-                    </div>
-                </div>
-            </script>
-
-            <img class="item item--iphone" src="images/items/iphone.png" alt="" />
-
-            <section class="container block block--contact">
-                <a id="contact" class="anchor"></a>
-
-                <h2>Get in touch!</h2>
-
-                <p>Contact me on one of the following and I'll get back to you as soon as I can. In the meantime, feel free to have a look around.</p>
-
-                <p>
-                    <a href="mailto:hello@jacq.com.au?subject=Enquiry from JacquelineHardy.com.au" class="button" title="Email"><i class="icon-mail"></i></a>
-                    <a href="http://au.linkedin.com/pub/jacqueline-hardy/69/424/876/" target="_blank" class="button" title="LinkedIn"><i class="icon-linkedin"></i></a>
-                    <a href="https://github.com/j4cq" target="_blank" class="button" title="GitHub"><i class="icon-github"></i></a>
-                </p>
-
-                <p><a href="#end" class="internal handwriting">back to the beginning<i class="arrow icon-up-big"></i></a></p>
-            </section>
-        </div>
-    </body>
+        <p>
+          <a href="#end" class="internal handwriting"
+            >back to the beginning<i class="arrow icon-up-big"></i
+          ></a>
+        </p>
+      </section>
+    </div>
+  </body>
 </html>

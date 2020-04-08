@@ -1,5 +1,5 @@
 .greyscale {
-  filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+  filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
   /* Firefox 10+, Firefox on Android */
   filter: gray;
   /* IE6-9 */
@@ -221,7 +221,7 @@ code,
 kbd,
 samp {
   font-family: monospace, serif;
-  _font-family: 'courier new', monospace;
+  _font-family: "courier new", monospace;
   font-size: 1em;
 }
 pre {
@@ -372,7 +372,7 @@ body {
 body {
   background: #eaeaea no-repeat center center fixed;
   background-size: cover;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   font-size: 16px;
   color: #7c7f88;
@@ -380,10 +380,10 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 body.screen--mobile {
-  background-image: url('../images/bg-mobile.jpg');
+  background-image: url("../images/bg-mobile.jpg");
 }
 body.screen--standard {
-  background-image: url('../images/bg.jpg');
+  background-image: url("../images/bg.jpg");
 }
 body.scroll-view {
   overflow: hidden;
@@ -423,7 +423,7 @@ h1 {
   font-size: 3em;
   line-height: 0.92;
   text-transform: uppercase;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   font-weight: 700;
 }
 h1 small {
@@ -496,7 +496,7 @@ hr {
 }
 .handwriting {
   display: none;
-  font-family: 'Loved by the King', cursive;
+  font-family: "Loved by the King", cursive;
   font-weight: 400;
   font-size: 1.7em;
   color: #bfc0c5;
@@ -854,16 +854,16 @@ hr {
   padding: 0;
 }
 .scroll-view .block--intro {
-  -webkit-transform: translate(150px, -100px);
-  -moz-transform: translate(150px, -100px);
-  -o-transform: translate(150px, -100px);
-  transform: translate(150px, -100px);
+  -webkit-transform: translate(150px, -150px);
+  -moz-transform: translate(150px, -150px);
+  -o-transform: translate(150px, -150px);
+  transform: translate(150px, -150px);
 }
 .scroll-view .block--about {
-  -webkit-transform: translate(150px, 650px);
-  -moz-transform: translate(150px, 650px);
-  -o-transform: translate(150px, 650px);
-  transform: translate(150px, 650px);
+  -webkit-transform: translate(150px, 600px);
+  -moz-transform: translate(150px, 600px);
+  -o-transform: translate(150px, 600px);
+  transform: translate(150px, 600px);
 }
 .scroll-view .block--skills {
   -webkit-transform: translate(-910px, 770px) rotate(-90deg);
@@ -976,7 +976,7 @@ hr {
   display: block;
   width: 100%;
   padding-top: 100%;
-  background-image: url('../images/portfolio/thumbs.jpg');
+  background-image: url("../images/portfolio/thumbs.jpg");
   background-repeat: no-repeat;
   background-size: 910%;
 }
