@@ -48,7 +48,7 @@ $(function () {
         $portfolioModal = $('#portfolio-modal');
 
     // get portfolio data
-    var portfolioData = window.width > 1200 ? PROTFOLIO : PROTFOLIO_MOBILE;
+    var portfolioData = window.innerWidth > 1200 ? PROTFOLIO : PROTFOLIO_MOBILE;
     setTimeout(() => createPortfolio(), 0)
 
     var itemTemplate = $('#item-template').html(),
