@@ -474,6 +474,8 @@ hr {
   list-style: none;
 }
 .list .list__item {
+  margin-bottom: 10px;
+  margin-top: 10px;
   padding-left: 1em;
 }
 .list .list__item + .list__item {
