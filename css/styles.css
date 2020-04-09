@@ -854,10 +854,10 @@ hr {
   padding: 0;
 }
 .scroll-view .block--intro {
-  -webkit-transform: translate(150px, -150px);
-  -moz-transform: translate(150px, -150px);
-  -o-transform: translate(150px, -150px);
-  transform: translate(150px, -150px);
+  -webkit-transform: translate(150px, -170px);
+  -moz-transform: translate(150px, -170px);
+  -o-transform: translate(150px, -170px);
+  transform: translate(150px, -170px);
 }
 .scroll-view .block--about {
   -webkit-transform: translate(150px, 600px);
