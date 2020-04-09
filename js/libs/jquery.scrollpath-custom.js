@@ -402,10 +402,9 @@
 	function scrollHandler( e ) {
 		var scrollDelta = e.originalEvent.wheelDelta || -e.originalEvent.detail,
 			dir = scrollDelta / ( Math.abs( scrollDelta ) );
-
 		e.preventDefault();
 		$( window ).scrollTop( 0 ).scrollLeft( 0 );
-		scrollSteps( -dir * STEP_SIZE );
+		// scrollSteps( -dir * STEP_SIZE );
 	}
 
 	/* Handles key scrolling (arrows and space) */
