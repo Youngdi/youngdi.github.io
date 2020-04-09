@@ -60,7 +60,9 @@ $(function () {
 
     function createPortfolio() {
         for (var i = 0; i < portfolioData.length; i++) {
+ 
             portfolioData[i].id = i;
+            portfolioData[i].empty = portfolioData[i].title == '' ? true : false;
 
             var output = Mustache.render(itemTemplate, portfolioData[i]);
 
@@ -69,6 +71,7 @@ $(function () {
     }
 
     $portfolioItems.on('click', '.show-modal', function (event) {
+        if ($(this).data('empty')) return
         showModal($(this).data('id'));
 
         event.preventDefault();
@@ -238,11 +241,10 @@ function disableoverflow() {
 
 
 
-
 const PROTFOLIO = [
     {
         "title": "Notes Station 3",
-        "description": "An experimental page created for a new gaming company. Received an awwwards.com honorable mention.",
+        "description": "Notes Station 3 combines the collaborative editing of Google Docs and the note-taking of Evernote into a single app hosted by private cloud on your QNAP NAS.",
         "url": "www.qnap.com/solution/notes-station3/en/",
         "images": {
             "thumb": "thumb--ns3",
@@ -250,396 +252,314 @@ const PROTFOLIO = [
         },
         "responsibilities": [
             {
-                "title": "Website",
+                "title": "Website Application",
                 "points": [
                     "Web design",
+                    "FrontEnd: React, Redux-saga",
+                    "BackEnd: Laravel",
+                    "Optimised animation and user interaction",
+                    "Editor Core function (ProseMirror)",
+                    "Dockerize",
+                ]
+            }
+        ]
+    },
+    {
+      "title": "",
+      "description": "",
+      "url": "",
+      "images": {
+          "thumb": "thumb--empty",
+          "full": "empty.jpg"
+      },
+      "responsibilities": [
+          {
+              "title": "",
+              "points": []
+          }
+      ]
+    },
+    {
+      "title": "UIUX Cafe",
+      "description": "An official landing page for a design company",
+      "url": "www.uiuxcafe.com",
+      "images": {
+          "thumb": "thumb--uiuxcafe",
+          "full": "uiuxcafe.jpg"
+      },
+      "responsibilities": [
+          {
+              "title": "Website",
+              "points": [
+                  "Gatsby SSR and SEO",
+                  "React",
+                  "Optimised animation and user interaction",
+                  "Fully responsive design"
+              ]
+          }
+      ]
+    },
+    {
+      "title": "",
+      "description": "",
+      "url": "",
+      "images": {
+          "thumb": "thumb--empty",
+          "full": "empty.jpg"
+      },
+      "responsibilities": [
+          {
+              "title": "",
+              "points": []
+          }
+      ]
+    },
+    {
+        "title": "Qfinder",
+        "description": "Qfinder allows you to quickly find and easily access all of the QNAP NAS on the same LAN.",
+        "url": "www.qnap.com/zh-tw/utilities/essentials",
+        "images": {
+            "thumb": "thumb--qfinder",
+            "full": "qfinder.jpg"
+        },
+        "responsibilities": [
+            {
+                "title": "Chrome Extension",
+                "points": [
+                    "UDP Bonjour and MDNS",
                     "Front end development",
-                    "Custom JS components",
-                    "Optimised animation",
-                    "Fully responsive design"
+                    "UI Logic and interface",
+                    "Optimised animation and user interaction",
+                    "Dockerize",
                 ]
             }
         ]
     },
     {
-        "title": "hey messenger",
-        "description": "An interactive one page site created for a new secure messaging app. The focus was to showcase information in an engaging, interactive way.",
-        "url": "hey-messenger.com",
+      "title": "",
+      "description": "",
+      "url": "",
+      "images": {
+          "thumb": "thumb--empty",
+          "full": "empty.jpg"
+      },
+      "responsibilities": [
+          {
+              "title": "",
+              "points": []
+          }
+      ]
+    },
+    {
+        "title": "iBobby (CHT)",
+        "description": "A cross-platform app for a smart speaker. It's like the Chinese version of Alexa",
+        "url": "ibobby.ai.hinet.net",
         "images": {
-            "thumb": "thumb--hey",
-            "full": "hey.jpg"
+            "thumb": "thumb--ibobby",
+            "full": "ibobby.jpg"
         },
         "responsibilities": [
             {
-                "title": "Website",
+                "title": "Cross Platform APP (IOT)",
                 "points": [
-                    "Website design",
-                    "Front end development",
-                    "Custom JS components",
-                    "Optimised animation",
-                    "Fully responsive design"
+                    "Build whole app by React Native",
+                    "Conntect with the smart speaker through UDP protocol",
+                    "State management with redux-saga",
+                    "Fastlane, Firebase integration",
+                    "Optimised animation and user interaction",
                 ]
             }
         ]
     },
     {
-        "title": "Digital Asset Group",
-        "description": "An interactive one page site created for a technology company.",
-        "url": "digitalassetgroup.com.au",
+      "title": "",
+      "description": "",
+      "url": "",
+      "images": {
+          "thumb": "thumb--empty",
+          "full": "empty.jpg"
+      },
+      "responsibilities": [
+          {
+              "title": "",
+              "points": []
+          }
+      ]
+    },
+    {
+      "title": "",
+      "description": "",
+      "url": "",
+      "images": {
+          "thumb": "thumb--empty",
+          "full": "empty.jpg"
+      },
+      "responsibilities": [
+          {
+              "title": "",
+              "points": []
+          }
+      ]
+    },
+    {
+        "title": "USPACE 停停圈",
+        "description": "A sharing platform for car parking space with a smart lock build by react-native",
+        "url": "uspace.city",
         "images": {
-            "thumb": "thumb--dag",
-            "full": "dag.jpg"
+            "thumb": "thumb--uspace",
+            "full": "uspace.jpg"
         },
         "responsibilities": [
             {
-                "title": "Website",
+                "title": "Cross Platform APP (IoT)",
                 "points": [
-                    "Brand identity",
-                    "Website design",
-                    "Front end development",
-                    "Custom JS components",
-                    "Optimised animation",
-                    "Fully responsive design"
+                    "Build whole app by React Native",
+                    "State management with mobx",
+                    "Fastlane, Firebase integration",
+                    "Optimised animation and user interaction",
                 ]
             }
         ]
     },
     {
-        "title": "Wotif.com",
-        "description": "Continuous delivery for a leading Australian online travel brand.",
-        "url": "wotif.com",
+        "title": "ULOCK Premium",
+        "description": "A sharing platform for car parking space with a smart lock build by react-native for space owner",
+        "url": "uspace.city",
         "images": {
-            "thumb": "thumb--wotif",
-            "full": "wotif.jpg"
+            "thumb": "thumb--ulock",
+            "full": "ulock.jpg"
         },
         "responsibilities": [
             {
-                "title": "Website",
+                "title": "Cross Platform APP (IoT)",
                 "points": [
-                    "Front end development for the new home page and accommodation booking flow",
-                    "Front end development for the packages booking flow",
-                    "Custom JS components",
-                    "Optimised user interaction",
-                    "Responsive design"
-                ]
-            }
-        ]
-    },
-    {
-        "title": "DRoP Challenge",
-        "description": "A fun landing page for an upcoming iOS game that needed to provide some teaser entertainment.",
-        "images": {
-            "thumb": "thumb--drop",
-            "full": "drop.jpg"
-        },
-        "responsibilities": [
-            {
-                "title": "Website",
-                "points": [
-                    "Front end development",
-                    "Custom JS components",
-                    "Optimised animation",
-                    "Fully responsive design"
-                ]
-            }
-        ]
-    },
-    {
-        "title": "HiDow",
-        "description": "A sports and remedial therapy product manufacturer and international supplier. HiDow required a complete brand overhaul for multiple international websites and products to refresh their corporate image.",
-        "url": "www.hidow.com.au",
-        "images": {
-            "thumb": "thumb--hidow",
-            "full": "hidow.jpg"
-        },
-        "responsibilities": [
-            {
-                "title": "Website",
-                "points": [
-                    "Complete redesign of online presence",
-                    "Custom coded Magento e-commerce theme",
-                    "Content rewriting"
-                ]
+                  "Build whole app by React Native",
+                  "State management with mobx",
+                  "Fastlane, Firebase integration",
+                  "Optimised animation and user interaction",
+              ]
             },
-            {
-                "title": "Product iPhone App",
-                "points": [
-                    "Complete user interface design"
-                ]
-            },
-            {
-                "title": "Print Media",
-                "points": [
-                    "Product photo retouching",
-                    "General marketing material"
-                ]
-            }
         ]
     },
     {
-        "title": "Hunt Education",
-        "description": "An Australian migration firm that required a educational course enrollment platform.",
-        "url": "www.hunteducation.com",
+      "title": "",
+      "description": "",
+      "url": "",
+      "images": {
+          "thumb": "thumb--empty",
+          "full": "empty.jpg"
+      },
+      "responsibilities": [
+          {
+              "title": "",
+              "points": []
+          }
+      ]
+    },
+    {
+        "title": "BibleBYT",
+        "description": "A bible study app for banner church",
+        "url": "apps.apple.com/tw/app/%E9%9D%88%E4%BF%AE%E5%BF%83/id1376386601",
         "images": {
-            "thumb": "thumb--hunteducation",
-            "full": "hunteducation.jpg"
+            "thumb": "thumb--biblebyt",
+            "full": "biblebyt.jpg"
         },
         "responsibilities": [
             {
-                "title": "Website",
+                "title": "Cross platform APP",
                 "points": [
-                    "Custom coded Magento e-commerce theme",
-                    "Front end development",
-                    "Adaptive design",
-                    "CMS"
+                    "Build with React-Native",
+                    "State management with mobx",
+                    "Realm DB",
+                    "Fastlane, Firebase integration",
+                    "Optimised animation and user interaction",
                 ]
             }
         ]
     },
     {
-        "title": "Hunt Migration",
-        "description": "An Australian migration firm that required a rebrand for their high traffic website.",
-        "url": "www.huntmigration.com",
+      "title": "",
+      "description": "",
+      "url": "",
+      "images": {
+          "thumb": "thumb--empty",
+          "full": "empty.jpg"
+      },
+      "responsibilities": [
+          {
+              "title": "",
+              "points": []
+          }
+      ]
+    },
+    {
+        "title": "十年",
+        "description": "「十年」 is an APP specially designed for Banner Church's 'BE STRONG' Camp happening this summer 2019. Use this App to help you have a great time during the “Be-Strong Camp”. 十年 also contains resources and clues to help you along the way.",
+        "url": "apps.apple.com/tw/app/%E5%8D%81%E5%B9%B4/id1470231721",
         "images": {
-            "thumb": "thumb--hunt",
-            "full": "hunt.jpg"
+            "thumb": "thumb--tenyear",
+            "full": "tenyear.jpg"
         },
         "responsibilities": [
             {
-                "title": "Website",
+                "title": "Cross platform APP",
                 "points": [
-                    "Custom coded Magento e-commerce theme",
-                    "Front end development",
-                    "Adaptive design",
-                    "CMS",
-                    "Custom jQuery interactive hero pieces",
-                    "Social media feeds"
+                  "FrontEnd Build with React-Native",
+                  "BackEnd build with Strapi CMS and deploy on Heroku",
+                  "Fastlane, Firebase integration",
+                  "Optimised animation and user interaction",
                 ]
             }
         ]
     },
     {
-        "title": "Just Digital People",
-        "description": "An awesome new recruitment company that needed a website to match.",
-        "images": {
-            "thumb": "thumb--jdp",
-            "full": "jdp.jpg"
-        },
-        "responsibilities": [
-            {
-                "title": "Website",
-                "points": [
-                    "Front end development",
-                    "Adaptive design",
-                    "CMS",
-                    "Event listings",
-                    "Profiles",
-                    "Custom jQuery interactive hero piece",
-                    "Social media feeds"
-                ]
-            }
-        ]
+      "title": "",
+      "description": "",
+      "url": "",
+      "images": {
+          "thumb": "thumb--empty",
+          "full": "empty.jpg"
+      },
+      "responsibilities": [
+          {
+              "title": "",
+              "points": []
+          }
+      ]
     },
     {
-        "title": "Toppik Australia",
-        "description": "An Australian hair-loss solution company that required an e-commerce platform to sell their product to the general public.",
-        "url": "www.toppik.com.au",
-        "images": {
-            "thumb": "thumb--toppik",
-            "full": "toppik.jpg"
-        },
-        "responsibilities": [
-            {
-                "title": "Website",
-                "points": [
-                    "Front end development",
-                    "Custom coded Magento e-commerce theme",
-                    "Responsive design",
-                    "E-commerce store",
-                    "CMS",
-                    "Custom jQuery interactive hero piece"
-                ]
-            }
-        ]
-    },
-    {
-        "title": "Time for Advice",
+        "title": "TakeOver",
         "description": "An Australian migration questions and answers website that required an online portal to communicate with customers in Australia and abroad.",
+        "url": "apps.apple.com/tw/app/byt-level-up/id1252631432",
         "images": {
-            "thumb": "thumb--tfa",
-            "full": "tfa.jpg"
+            "thumb": "thumb--takeover",
+            "full": "takeover.jpg"
         },
         "responsibilities": [
             {
-                "title": "Website",
-                "points": [
-                    "Front end development",
-                    "Adaptive design",
-                    "CRM",
-                    "CMS",
-                    "Custom jQuery interactive hero piece"
-                ]
+              "title": "Cross platform APP",
+              "points": [
+                "FrontEnd Build with React-Native",
+                "BackEnd build with Node.js server and deploy on AWS",
+                "Fastlane, Firebase integration",
+                "Optimised animation and user interaction",
+              ]
             }
         ]
     },
     {
-        "title": "Northern Inland Chiropractic",
-        "description": "An Australian chiropractic practice that required a high end brochure site to provide information about the company and founder.",
-        "images": {
-            "thumb": "thumb--nichiro",
-            "full": "nichiro.jpg"
-        },
-        "responsibilities": [
-            {
-                "title": "Website",
-                "points": [
-                    "Front end development",
-                    "Adaptive design",
-                    "Custom jQuery pieces implementing parallax design",
-                    "AJAX contact forms"
-                ]
-            }
-        ]
+      "title": "",
+      "description": "",
+      "url": "",
+      "images": {
+          "thumb": "thumb--empty",
+          "full": "empty.jpg"
+      },
+      "responsibilities": [
+          {
+              "title": "",
+              "points": []
+          }
+      ]
     },
-    {
-        "title": "After Market",
-        "description": "An Australian company that provided after market services for the car industry. They required a cool brochure site to showcase their products.",
-        "images": {
-            "thumb": "thumb--aftermarket",
-            "full": "aftermarket.jpg"
-        },
-        "responsibilities": [
-            {
-                "title": "Website",
-                "points": [
-                    "Front end development",
-                    "Adaptive design",
-                    "Custom jQuery pieces",
-                    "AJAX contact forms"
-                ]
-            }
-        ]
-    },
-    {
-        "title": "Tevee",
-        "description": "A company that wanted to launch a new concept for free TV, anywhere, any time.",
-        "images": {
-            "thumb": "thumb--tevee",
-            "full": "tevee.jpg"
-        },
-        "responsibilities": [
-            {
-                "title": "Website",
-                "points": [
-                    "Front end development",
-                    "Responsive design",
-                    "Custom jQuery interactive pieces",
-                    "Extensive wireframing",
-                    "Multiple landing pages",
-                    "AJAX contact forms"
-                ]
-            }
-        ]
-    },
-    {
-        "title": "Every Month",
-        "description": "A unique e-commerce shopping model that required a funky web presence.",
-        "images": {
-            "thumb": "thumb--everymonth",
-            "full": "everymonth.jpg"
-        },
-        "responsibilities": [
-            {
-                "title": "Website",
-                "points": [
-                    "Front end development",
-                    "Adaptive design"
-                ]
-            }
-        ]
-    },
-    {
-        "title": "CHTrader",
-        "description": "A software company in the financial industry that required the development of a complete brand image and customer support management website.",
-        "url": "www.chtrader.net",
-        "images": {
-            "thumb": "thumb--cht",
-            "full": "cht.jpg"
-        },
-        "responsibilities": [
-            {
-                "title": "Website",
-                "points": [
-                    "Complete design of online presence",
-                    "Front end development",
-                    "CRM",
-                    "Online user guide",
-                    "Ticketing system and knowledge base",
-                    "Site news and email newsletter",
-                    "Historical data cron tasks"
-                ]
-            },
-            {
-                "title": "Print Media",
-                "points": [
-                    "Logo and corporate stationery design",
-                    "General marketing material",
-                    "User guide design and content layout"
-                ]
-            }
-        ]
-    },
-    {
-        "title": "Build Your Trading",
-        "description": "A software company in the financial industry that required the development of a complete brand image and customer support management website.",
-        "url": "www.buildyourtrading.net",
-        "images": {
-            "thumb": "thumb--byt",
-            "full": "byt.jpg"
-        },
-        "responsibilities": [
-            {
-                "title": "Website",
-                "points": [
-                    "Complete design of online presence",
-                    "Front end development",
-                    "Responsive design",
-                    "CRM",
-                    "Online user guide",
-                    "Ticketing system and knowledge base",
-                    "Site news and email newsletter",
-                    "Historical data cron tasks"
-                ]
-            },
-            {
-                "title": "Print Media",
-                "points": [
-                    "Logo and corporate stationery design",
-                    "General marketing material",
-                    "User guide design and content layout"
-                ]
-            }
-        ]
-    },
-    {
-        "title": "Octave Corporate Rentals",
-        "description": "A company that provides rental properties for energy related company employees in Queensland. They required a website that could display property listings and latest news, with a design that was in keeping with the corporate nature of their target market.",
-        "url": "www.octavecorporaterentals.com.au",
-        "images": {
-            "thumb": "thumb--octave",
-            "full": "octave.jpg"
-        },
-        "responsibilities": [
-            {
-                "title": "Website",
-                "points": [
-                    "Website design",
-                    "Front end development",
-                    "CMS",
-                    "Property listings and search",
-                    "Latest news feed"
-                ]
-            }
-        ]
-    }
 ];

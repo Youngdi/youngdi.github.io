@@ -970,8 +970,12 @@ hr {
 }
 .portfolio__item a {
   display: block;
+  background: transparent;
+}
+.portfolio__item a:hover {
   background: #bffd48;
 }
+
 .portfolio__item a span {
   display: block;
   width: 100%;
@@ -1008,114 +1012,82 @@ hr {
 .scroll-view .portfolio__item:nth-child(10) {
   margin-right: 71.42857143%;
 }
+.thumb--empty {
+  padding-top: 100%;
+  background-color: black;
+  width: 172px;
+  height: 172px;
+}
+
 .thumb--ns3 {
   padding-top: 100%;
   background-image: url("../images/portfolio/notestation.jpg");
   background-repeat: no-repeat;
-  background-size: 120%;
+  background-size: 85%;
+  background-position: center;
+  background-color: white;
 }
-.thumb--wotif {
+.thumb--qfinder {
   padding-top: 100%;
-  background-image: url("../images/portfolio/a.jpg");
+  background-image: url("../images/portfolio/qfinder_icon.jpg");
   background-repeat: no-repeat;
-  background-size: 910%;
+  background-size: 85%;
+  background-color: white;
+  background-position: center;
 }
-.thumb--drop {
+.thumb--uiuxcafe {
   padding-top: 100%;
-  background-image: url("../images/portfolio/a.jpg");
+  background-image: url("../images/portfolio/uiuxcafe_icon.jpg");
   background-repeat: no-repeat;
-  background-size: 910%;
+  background-size: 90%;
+  background-color: white;
+  background-position: center;
 }
-.thumb--hidow {
+.thumb--ibobby {
   padding-top: 100%;
-  background-image: url("../images/portfolio/a.jpg");
+  background-image: url("../images/portfolio/ibobby_icon.jpg");
   background-repeat: no-repeat;
-  background-size: 910%;
+  background-size: 100%;
 }
-.thumb--hunteducation {
+.thumb--uspace {
   padding-top: 100%;
-  background-image: url("../images/portfolio/a.jpg");
+  background-image: url("../images/portfolio/uspace_icon.jpg");
   background-repeat: no-repeat;
-  background-size: 910%;
+  background-size: 105%;
 }
-.thumb--hunt {
+.thumb--ulock {
   padding-top: 100%;
-  background-image: url("../images/portfolio/a.jpg");
+  background-image: url("../images/portfolio/ulock_icon.jpg");
   background-repeat: no-repeat;
-  background-size: 910%;
+  background-size: 90%;
+  background-color: white;
+  background-position: center;
 }
-.thumb--jdp {
+.thumb--biblebyt {
   padding-top: 100%;
-  background-image: url("../images/portfolio/a.jpg");
+  background-image: url("../images/portfolio/biblebyt_icon.jpg");
   background-repeat: no-repeat;
-  background-size: 910%;
+  background-size: 100%;
+  background-color: white;
+  background-position: center;
 }
-.thumb--toppik {
+.thumb--tenyear {
   padding-top: 100%;
-  background-image: url("../images/portfolio/a.jpg");
+  background-image: url("../images/portfolio/tenyear_icon.jpg");
   background-repeat: no-repeat;
-  background-size: 910%;
+  background-size: 100%;
+  background-color: white;
+  background-position: center;
 }
-.thumb--tfa {
+.thumb--takeover {
   padding-top: 100%;
-  background-image: url("../images/portfolio/a.jpg");
+  background-image: url("../images/portfolio/takeover_icon.jpg");
   background-repeat: no-repeat;
-  background-size: 910%;
+  background-size: 100%;
+  background-color: white;
+  background-position: center;
 }
-.thumb--nichiro {
-  padding-top: 100%;
-  background-image: url("../images/portfolio/a.jpg");
-  background-repeat: no-repeat;
-  background-size: 910%;
-}
-.thumb--aftermarket {
-  padding-top: 100%;
-  background-image: url("../images/portfolio/a.jpg");
-  background-repeat: no-repeat;
-  background-size: 910%;
-}
-.thumb--tevee {
-  padding-top: 100%;
-  background-image: url("../images/portfolio/a.jpg");
-  background-repeat: no-repeat;
-  background-size: 910%;
-}
-.thumb--everymonth {
-  padding-top: 100%;
-  background-image: url("../images/portfolio/a.jpg");
-  background-repeat: no-repeat;
-  background-size: 910%;
-}
-.thumb--cht {
-  padding-top: 100%;
-  background-image: url("../images/portfolio/a.jpg");
-  background-repeat: no-repeat;
-  background-size: 910%;
-}
-.thumb--byt {
-  padding-top: 100%;
-  background-image: url("../images/portfolio/a.jpg");
-  background-repeat: no-repeat;
-  background-size: 910%;
-}
-.thumb--hey {
-  padding-top: 100%;
-  background-image: url("../images/portfolio/a.jpg");
-  background-repeat: no-repeat;
-  background-size: 910%;
-}
-.thumb--octave {
-  padding-top: 100%;
-  background-image: url("../images/portfolio/a.jpg");
-  background-repeat: no-repeat;
-  background-size: 910%;
-}
-.thumb--dag {
-  padding-top: 100%;
-  background-image: url("../images/portfolio/a.jpg");
-  background-repeat: no-repeat;
-  background-size: 910%;
-}
+
 @media screen and (min-width: 28em) {
   .menu__item + .menu__item {
     margin-left: 0.625em;

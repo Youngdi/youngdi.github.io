@@ -173,8 +173,8 @@
             <div>
               <i class="list__item__icon icon-right"></i>HTML, JS, CSS, SCSS,
               <a href="https://styled-components.com/">Styled-Components</a>,
-              <a href="https://www.typescriptlang.org/">TS</a>, FP,
-              <a href="https://ramdajs.com/">Ramda</a>, lodash,
+              <a href="https://www.typescriptlang.org/">TS</a>,
+              <a href="https://ramdajs.com/">Ramda</a>,
               <a href="https://rxjs-dev.firebaseapp.com/">RxJS</a>,
               <a href="https://prosemirror.net/">Editor(ProseMirror)</a>
             </div>
@@ -203,7 +203,7 @@
           <li class="list__item">
             <div>
               <i class="list__item__icon icon-right"></i>E2E Test(Puppeteer),
-              Crawler(Node.js)
+              Crawler(Node.js), Chrome Extension
             </div>
           </li>
           <li class="list__item">
@@ -236,6 +236,11 @@
               teaching <a href="https://scratch.mit.edu/">Scratch</a>,
               <a href="https://microbit.org/code/">Mirco:bit</a>,
               <a href="https://edu.bloxelsbuilder.com/">Bloxels</a>
+            </div>
+          </li>
+          <li class="list__item">
+            <div>
+              <i class="list__item__icon icon-right"></i>Experience with Asana, Invision, PS, AI, PR
             </div>
           </li>
         </ul>
@@ -278,7 +283,7 @@
 
       <script id="item-template" type="text/html">
         <li class="portfolio__item">
-            <a {{#url}}href="https://{{url}}" target="_blank"{{/url}} class="show-modal" data-id="{{id}}">
+            <a {{#url}}href="https://{{url}}" target="_blank"{{/url}} class="show-modal" data-id="{{id}}" data-empty="{{empty}}">
               <span class="{{images.thumb}}"></span>
             </a>
         </li>
@@ -301,7 +306,7 @@
                 <p>{{description}}</p>
 
                 {{#url}}
-                    <a href="https://{{url}}" target="_blank"><i class="icon-link"></i>Check it out for more detail</a>
+                    <a href="https://{{url}}" target="_blank"><i class="icon-link"></i>Check it out for more details</a>
                 {{/url}}
 
                 <hr />
@@ -311,6 +316,7 @@
                 {{/responsibilities.length}}
 
                 {{#responsibilities}}
+                    <br />
                     <h4>{{title}}</h4>
                     <ul class="list">
                         {{#points}}
@@ -336,20 +342,20 @@
 
         <p>
           <a
-            href="mailto:hello@jacq.com.au?subject=Enquiry from JacquelineHardy.com.au"
+            href="mailto:u9951062@gmail.com"
             class="button"
             title="Email"
             ><i class="icon-mail"></i
           ></a>
           <a
-            href="http://au.linkedin.com/pub/jacqueline-hardy/69/424/876/"
+            href="https://www.linkedin.com/in/bill-yang-61890a15b/"
             target="_blank"
             class="button"
             title="LinkedIn"
             ><i class="icon-linkedin"></i
           ></a>
           <a
-            href="https://github.com/j4cq"
+            href="https://github.com/Youngdi"
             target="_blank"
             class="button"
             title="GitHub"
