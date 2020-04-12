@@ -862,10 +862,10 @@ hr {
   transform: translate(150px, -170px);
 }
 .scroll-view .block--about {
-  -webkit-transform: translate(150px, 600px);
-  -moz-transform: translate(150px, 600px);
-  -o-transform: translate(150px, 600px);
-  transform: translate(150px, 600px);
+  -webkit-transform: translate(150px, 550px);
+  -moz-transform: translate(150px, 550px);
+  -o-transform: translate(150px, 550px);
+  transform: translate(150px, 550px);
 }
 .scroll-view .block--skills {
   -webkit-transform: translate(-910px, 770px) rotate(-90deg);
