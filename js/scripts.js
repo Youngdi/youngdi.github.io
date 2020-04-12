@@ -60,7 +60,7 @@ $(function () {
 
     function createPortfolio() {
         for (var i = 0; i < portfolioData.length; i++) {
- 
+
             portfolioData[i].id = i;
             portfolioData[i].empty = portfolioData[i].title == '' ? true : false;
 
@@ -265,54 +265,54 @@ const PROTFOLIO = [
         ]
     },
     {
-      "title": "",
-      "description": "",
-      "url": "",
-      "images": {
-          "thumb": "thumb--empty",
-          "full": "empty.jpg"
-      },
-      "responsibilities": [
-          {
-              "title": "",
-              "points": []
-          }
-      ]
+        "title": "",
+        "description": "",
+        "url": "",
+        "images": {
+            "thumb": "thumb--empty",
+            "full": "empty.jpg"
+        },
+        "responsibilities": [
+            {
+                "title": "",
+                "points": []
+            }
+        ]
     },
     {
-      "title": "UIUX Cafe",
-      "description": "An official landing page for a design company",
-      "url": "www.uiuxcafe.com",
-      "images": {
-          "thumb": "thumb--uiuxcafe",
-          "full": "uiuxcafe.jpg"
-      },
-      "responsibilities": [
-          {
-              "title": "Website",
-              "points": [
-                  "Gatsby SSR and SEO",
-                  "React",
-                  "Optimised animation and user interaction",
-                  "Fully responsive design"
-              ]
-          }
-      ]
+        "title": "UIUX Cafe",
+        "description": "An official landing page for a design company",
+        "url": "www.uiuxcafe.com",
+        "images": {
+            "thumb": "thumb--uiuxcafe",
+            "full": "uiuxcafe.jpg"
+        },
+        "responsibilities": [
+            {
+                "title": "Website",
+                "points": [
+                    "Gatsby SSR and SEO",
+                    "React",
+                    "Optimised animation and user interaction",
+                    "Fully responsive design"
+                ]
+            }
+        ]
     },
     {
-      "title": "",
-      "description": "",
-      "url": "",
-      "images": {
-          "thumb": "thumb--empty",
-          "full": "empty.jpg"
-      },
-      "responsibilities": [
-          {
-              "title": "",
-              "points": []
-          }
-      ]
+        "title": "",
+        "description": "",
+        "url": "",
+        "images": {
+            "thumb": "thumb--empty",
+            "full": "empty.jpg"
+        },
+        "responsibilities": [
+            {
+                "title": "",
+                "points": []
+            }
+        ]
     },
     {
         "title": "Qfinder",
@@ -336,19 +336,19 @@ const PROTFOLIO = [
         ]
     },
     {
-      "title": "",
-      "description": "",
-      "url": "",
-      "images": {
-          "thumb": "thumb--empty",
-          "full": "empty.jpg"
-      },
-      "responsibilities": [
-          {
-              "title": "",
-              "points": []
-          }
-      ]
+        "title": "",
+        "description": "",
+        "url": "",
+        "images": {
+            "thumb": "thumb--empty",
+            "full": "empty.jpg"
+        },
+        "responsibilities": [
+            {
+                "title": "",
+                "points": []
+            }
+        ]
     },
     {
         "title": "iBobby (CHT)",
@@ -372,34 +372,34 @@ const PROTFOLIO = [
         ]
     },
     {
-      "title": "",
-      "description": "",
-      "url": "",
-      "images": {
-          "thumb": "thumb--empty",
-          "full": "empty.jpg"
-      },
-      "responsibilities": [
-          {
-              "title": "",
-              "points": []
-          }
-      ]
+        "title": "",
+        "description": "",
+        "url": "",
+        "images": {
+            "thumb": "thumb--empty",
+            "full": "empty.jpg"
+        },
+        "responsibilities": [
+            {
+                "title": "",
+                "points": []
+            }
+        ]
     },
     {
-      "title": "",
-      "description": "",
-      "url": "",
-      "images": {
-          "thumb": "thumb--empty",
-          "full": "empty.jpg"
-      },
-      "responsibilities": [
-          {
-              "title": "",
-              "points": []
-          }
-      ]
+        "title": "",
+        "description": "",
+        "url": "",
+        "images": {
+            "thumb": "thumb--empty",
+            "full": "empty.jpg"
+        },
+        "responsibilities": [
+            {
+                "title": "",
+                "points": []
+            }
+        ]
     },
     {
         "title": "USPACE 停停圈",
@@ -433,28 +433,28 @@ const PROTFOLIO = [
             {
                 "title": "Cross Platform APP (IoT)",
                 "points": [
-                  "Build whole app by React Native",
-                  "State management with mobx",
-                  "Fastlane, Firebase integration",
-                  "Optimised animation and user interaction",
-              ]
+                    "Build whole app by React Native",
+                    "State management with mobx",
+                    "Fastlane, Firebase integration",
+                    "Optimised animation and user interaction",
+                ]
             },
         ]
     },
     {
-      "title": "",
-      "description": "",
-      "url": "",
-      "images": {
-          "thumb": "thumb--empty",
-          "full": "empty.jpg"
-      },
-      "responsibilities": [
-          {
-              "title": "",
-              "points": []
-          }
-      ]
+        "title": "",
+        "description": "",
+        "url": "",
+        "images": {
+            "thumb": "thumb--empty",
+            "full": "empty.jpg"
+        },
+        "responsibilities": [
+            {
+                "title": "",
+                "points": []
+            }
+        ]
     },
     {
         "title": "BibleBYT",
@@ -478,19 +478,19 @@ const PROTFOLIO = [
         ]
     },
     {
-      "title": "",
-      "description": "",
-      "url": "",
-      "images": {
-          "thumb": "thumb--empty",
-          "full": "empty.jpg"
-      },
-      "responsibilities": [
-          {
-              "title": "",
-              "points": []
-          }
-      ]
+        "title": "",
+        "description": "",
+        "url": "",
+        "images": {
+            "thumb": "thumb--empty",
+            "full": "empty.jpg"
+        },
+        "responsibilities": [
+            {
+                "title": "",
+                "points": []
+            }
+        ]
     },
     {
         "title": "十年",
@@ -504,28 +504,28 @@ const PROTFOLIO = [
             {
                 "title": "Cross platform APP",
                 "points": [
-                  "FrontEnd Build with React-Native",
-                  "BackEnd build with Strapi CMS and deploy on Heroku",
-                  "Fastlane, Firebase integration",
-                  "Optimised animation and user interaction",
+                    "FrontEnd Build with React-Native",
+                    "BackEnd build with Strapi CMS and deploy on Heroku",
+                    "Fastlane, Firebase integration",
+                    "Optimised animation and user interaction",
                 ]
             }
         ]
     },
     {
-      "title": "",
-      "description": "",
-      "url": "",
-      "images": {
-          "thumb": "thumb--empty",
-          "full": "empty.jpg"
-      },
-      "responsibilities": [
-          {
-              "title": "",
-              "points": []
-          }
-      ]
+        "title": "",
+        "description": "",
+        "url": "",
+        "images": {
+            "thumb": "thumb--empty",
+            "full": "empty.jpg"
+        },
+        "responsibilities": [
+            {
+                "title": "",
+                "points": []
+            }
+        ]
     },
     {
         "title": "TakeOver",
@@ -537,352 +537,352 @@ const PROTFOLIO = [
         },
         "responsibilities": [
             {
-              "title": "Cross platform APP",
-              "points": [
-                "FrontEnd Build with React-Native",
-                "BackEnd build with Node.js server and deploy on AWS",
-                "Fastlane, Firebase integration",
-                "Optimised animation and user interaction",
-              ]
+                "title": "Cross platform APP",
+                "points": [
+                    "FrontEnd Build with React-Native",
+                    "BackEnd build with Node.js server and deploy on AWS",
+                    "Fastlane, Firebase integration",
+                    "Optimised animation and user interaction",
+                ]
             }
         ]
     },
     {
-      "title": "",
-      "description": "",
-      "url": "",
-      "images": {
-          "thumb": "thumb--empty",
-          "full": "empty.jpg"
-      },
-      "responsibilities": [
-          {
-              "title": "",
-              "points": []
-          }
-      ]
+        "title": "",
+        "description": "",
+        "url": "",
+        "images": {
+            "thumb": "thumb--empty",
+            "full": "empty.jpg"
+        },
+        "responsibilities": [
+            {
+                "title": "",
+                "points": []
+            }
+        ]
     },
 ];
 
 const PROTFOLIO_MOBILE = [
-  {
-      "title": "Notes Station 3",
-      "description": "Notes Station 3 combines the collaborative editing of Google Docs and the note-taking of Evernote into a single app hosted by private cloud on your QNAP NAS.",
-      "url": "www.qnap.com/solution/notes-station3/en/",
-      "images": {
-          "thumb": "thumb--ns3",
-          "full": "ns3.jpg"
-      },
-      "responsibilities": [
-          {
-              "title": "Website Application",
-              "points": [
-                  "Web design",
-                  "FrontEnd: React, Redux-saga",
-                  "BackEnd: Laravel",
-                  "Optimised animation and user interaction",
-                  "Editor Core function (ProseMirror)",
-                  "Dockerize",
-              ]
-          }
-      ]
-  },
-  {
-    "title": "",
-    "description": "",
-    "url": "",
-    "images": {
-        "thumb": "thumb--empty",
-        "full": "empty.jpg"
+    {
+        "title": "Notes Station 3",
+        "description": "Notes Station 3 combines the collaborative editing of Google Docs and the note-taking of Evernote into a single app hosted by private cloud on your QNAP NAS.",
+        "url": "www.qnap.com/solution/notes-station3/en/",
+        "images": {
+            "thumb": "thumb--ns3",
+            "full": "ns3.jpg"
+        },
+        "responsibilities": [
+            {
+                "title": "Website Application",
+                "points": [
+                    "Web design",
+                    "FrontEnd: React, Redux-saga",
+                    "BackEnd: Laravel",
+                    "Optimised animation and user interaction",
+                    "Editor Core function (ProseMirror)",
+                    "Dockerize",
+                ]
+            }
+        ]
     },
-    "responsibilities": [
-        {
-            "title": "",
-            "points": []
-        }
-    ]
-  },
-  {
-    "title": "UIUX Cafe",
-    "description": "An official landing page for a design company",
-    "url": "www.uiuxcafe.com",
-    "images": {
-        "thumb": "thumb--uiuxcafe",
-        "full": "uiuxcafe.jpg"
+    {
+        "title": "",
+        "description": "",
+        "url": "",
+        "images": {
+            "thumb": "thumb--empty",
+            "full": "empty.jpg"
+        },
+        "responsibilities": [
+            {
+                "title": "",
+                "points": []
+            }
+        ]
     },
-    "responsibilities": [
-        {
-            "title": "Website",
-            "points": [
-                "Gatsby SSR and SEO",
-                "React",
-                "Optimised animation and user interaction",
-                "Fully responsive design"
-            ]
-        }
-    ]
-  },
-  {
-    "title": "",
-    "description": "",
-    "url": "",
-    "images": {
-        "thumb": "thumb--empty",
-        "full": "empty.jpg"
+    {
+        "title": "UIUX Cafe",
+        "description": "An official landing page for a design company",
+        "url": "www.uiuxcafe.com",
+        "images": {
+            "thumb": "thumb--uiuxcafe",
+            "full": "uiuxcafe.jpg"
+        },
+        "responsibilities": [
+            {
+                "title": "Website",
+                "points": [
+                    "Gatsby SSR and SEO",
+                    "React",
+                    "Optimised animation and user interaction",
+                    "Fully responsive design"
+                ]
+            }
+        ]
     },
-    "responsibilities": [
-        {
-            "title": "",
-            "points": []
-        }
-    ]
-  },
-  {
-      "title": "Qfinder",
-      "description": "Qfinder allows you to quickly find and easily access all of the QNAP NAS on the same LAN.",
-      "url": "www.qnap.com/zh-tw/utilities/essentials",
-      "images": {
-          "thumb": "thumb--qfinder",
-          "full": "qfinder.jpg"
-      },
-      "responsibilities": [
-          {
-              "title": "Chrome Extension",
-              "points": [
-                  "UDP Bonjour and MDNS",
-                  "Front end development",
-                  "UI Logic and interface",
-                  "Optimised animation and user interaction",
-                  "Dockerize",
-              ]
-          }
-      ]
-  },
-  {
-    "title": "",
-    "description": "",
-    "url": "",
-    "images": {
-        "thumb": "thumb--empty",
-        "full": "empty.jpg"
+    {
+        "title": "",
+        "description": "",
+        "url": "",
+        "images": {
+            "thumb": "thumb--empty",
+            "full": "empty.jpg"
+        },
+        "responsibilities": [
+            {
+                "title": "",
+                "points": []
+            }
+        ]
     },
-    "responsibilities": [
-        {
-            "title": "",
-            "points": []
-        }
-    ]
-  },
-  {
-      "title": "iBobby (CHT)",
-      "description": "A cross-platform app for a smart speaker. It's like the Chinese version of Alexa",
-      "url": "ibobby.ai.hinet.net",
-      "images": {
-          "thumb": "thumb--ibobby",
-          "full": "ibobby.jpg"
-      },
-      "responsibilities": [
-          {
-              "title": "Cross Platform APP (IOT)",
-              "points": [
-                  "Build whole app by React Native",
-                  "Conntect with the smart speaker through UDP protocol",
-                  "State management with redux-saga",
-                  "Fastlane, Firebase integration",
-                  "Optimised animation and user interaction",
-              ]
-          }
-      ]
-  },
-  {
-    "title": "",
-    "description": "",
-    "url": "",
-    "images": {
-        "thumb": "thumb--empty",
-        "full": "empty.jpg"
+    {
+        "title": "Qfinder",
+        "description": "Qfinder allows you to quickly find and easily access all of the QNAP NAS on the same LAN.",
+        "url": "www.qnap.com/zh-tw/utilities/essentials",
+        "images": {
+            "thumb": "thumb--qfinder",
+            "full": "qfinder.jpg"
+        },
+        "responsibilities": [
+            {
+                "title": "Chrome Extension",
+                "points": [
+                    "UDP Bonjour and MDNS",
+                    "Front end development",
+                    "UI Logic and interface",
+                    "Optimised animation and user interaction",
+                    "Dockerize",
+                ]
+            }
+        ]
     },
-    "responsibilities": [
-        {
-            "title": "",
-            "points": []
-        }
-    ]
-  },
-  {
-    "title": "USPACE 停停圈",
-    "description": "A sharing platform for car parking space with a smart lock build by react-native",
-    "url": "uspace.city",
-    "images": {
-        "thumb": "thumb--uspace",
-        "full": "uspace.jpg"
+    {
+        "title": "",
+        "description": "",
+        "url": "",
+        "images": {
+            "thumb": "thumb--empty",
+            "full": "empty.jpg"
+        },
+        "responsibilities": [
+            {
+                "title": "",
+                "points": []
+            }
+        ]
     },
-    "responsibilities": [
-        {
-            "title": "Cross Platform APP (IoT)",
-            "points": [
-                "Build whole app by React Native",
-                "State management with mobx",
-                "Fastlane, Firebase integration",
-                "Optimised animation and user interaction",
-            ]
-        }
-    ]
-  },
-  {
-    "title": "",
-    "description": "",
-    "url": "",
-    "images": {
-        "thumb": "thumb--empty",
-        "full": "empty.jpg"
+    {
+        "title": "iBobby (CHT)",
+        "description": "A cross-platform app for a smart speaker. It's like the Chinese version of Alexa",
+        "url": "ibobby.ai.hinet.net",
+        "images": {
+            "thumb": "thumb--ibobby",
+            "full": "ibobby.jpg"
+        },
+        "responsibilities": [
+            {
+                "title": "Cross Platform APP (IOT)",
+                "points": [
+                    "Build whole app by React Native",
+                    "Conntect with the smart speaker through UDP protocol",
+                    "State management with redux-saga",
+                    "Fastlane, Firebase integration",
+                    "Optimised animation and user interaction",
+                ]
+            }
+        ]
     },
-    "responsibilities": [
-        {
-            "title": "",
-            "points": []
-        }
-    ]
-  },
-  {
-      "title": "ULOCK Premium",
-      "description": "A sharing platform for car parking space with a smart lock build by react-native for space owner",
-      "url": "uspace.city",
-      "images": {
-          "thumb": "thumb--ulock",
-          "full": "ulock.jpg"
-      },
-      "responsibilities": [
-          {
-              "title": "Cross Platform APP (IoT)",
-              "points": [
-                "Build whole app by React Native",
-                "State management with mobx",
-                "Fastlane, Firebase integration",
-                "Optimised animation and user interaction",
-            ]
-          },
-      ]
-  },
-  {
-    "title": "",
-    "description": "",
-    "url": "",
-    "images": {
-        "thumb": "thumb--empty",
-        "full": "empty.jpg"
+    {
+        "title": "",
+        "description": "",
+        "url": "",
+        "images": {
+            "thumb": "thumb--empty",
+            "full": "empty.jpg"
+        },
+        "responsibilities": [
+            {
+                "title": "",
+                "points": []
+            }
+        ]
     },
-    "responsibilities": [
-        {
-            "title": "",
-            "points": []
-        }
-    ]
-  },
-  {
-      "title": "BibleBYT",
-      "description": "A bible study app for banner church",
-      "url": "apps.apple.com/tw/app/%E9%9D%88%E4%BF%AE%E5%BF%83/id1376386601",
-      "images": {
-          "thumb": "thumb--biblebyt",
-          "full": "biblebyt.jpg"
-      },
-      "responsibilities": [
-          {
-              "title": "Cross platform APP",
-              "points": [
-                  "Build with React-Native",
-                  "State management with mobx",
-                  "Realm DB",
-                  "Fastlane, Firebase integration",
-                  "Optimised animation and user interaction",
-              ]
-          }
-      ]
-  },
-  {
-    "title": "",
-    "description": "",
-    "url": "",
-    "images": {
-        "thumb": "thumb--empty",
-        "full": "empty.jpg"
+    {
+        "title": "USPACE 停停圈",
+        "description": "A sharing platform for car parking space with a smart lock build by react-native",
+        "url": "uspace.city",
+        "images": {
+            "thumb": "thumb--uspace",
+            "full": "uspace.jpg"
+        },
+        "responsibilities": [
+            {
+                "title": "Cross Platform APP (IoT)",
+                "points": [
+                    "Build whole app by React Native",
+                    "State management with mobx",
+                    "Fastlane, Firebase integration",
+                    "Optimised animation and user interaction",
+                ]
+            }
+        ]
     },
-    "responsibilities": [
-        {
-            "title": "",
-            "points": []
-        }
-    ]
-  },
-  {
-      "title": "十年",
-      "description": "「十年」 is an APP specially designed for Banner Church's 'BE STRONG' Camp happening this summer 2019. Use this App to help you have a great time during the “Be-Strong Camp”. 十年 also contains resources and clues to help you along the way.",
-      "url": "apps.apple.com/tw/app/%E5%8D%81%E5%B9%B4/id1470231721",
-      "images": {
-          "thumb": "thumb--tenyear",
-          "full": "tenyear.jpg"
-      },
-      "responsibilities": [
-          {
-              "title": "Cross platform APP",
-              "points": [
-                "FrontEnd Build with React-Native",
-                "BackEnd build with Strapi CMS and deploy on Heroku",
-                "Fastlane, Firebase integration",
-                "Optimised animation and user interaction",
-              ]
-          }
-      ]
-  },
-  {
-    "title": "",
-    "description": "",
-    "url": "",
-    "images": {
-        "thumb": "thumb--empty",
-        "full": "empty.jpg"
+    {
+        "title": "",
+        "description": "",
+        "url": "",
+        "images": {
+            "thumb": "thumb--empty",
+            "full": "empty.jpg"
+        },
+        "responsibilities": [
+            {
+                "title": "",
+                "points": []
+            }
+        ]
     },
-    "responsibilities": [
-        {
-            "title": "",
-            "points": []
-        }
-    ]
-  },
-  {
-      "title": "TakeOver",
-      "description": "An Australian migration questions and answers website that required an online portal to communicate with customers in Australia and abroad.",
-      "url": "apps.apple.com/tw/app/byt-level-up/id1252631432",
-      "images": {
-          "thumb": "thumb--takeover",
-          "full": "takeover.jpg"
-      },
-      "responsibilities": [
-          {
-            "title": "Cross platform APP",
-            "points": [
-              "FrontEnd Build with React-Native",
-              "BackEnd build with Node.js server and deploy on AWS",
-              "Fastlane, Firebase integration",
-              "Optimised animation and user interaction",
-            ]
-          }
-      ]
-  },
-  {
-    "title": "",
-    "description": "",
-    "url": "",
-    "images": {
-        "thumb": "thumb--empty",
-        "full": "empty.jpg"
+    {
+        "title": "ULOCK Premium",
+        "description": "A sharing platform for car parking space with a smart lock build by react-native for space owner",
+        "url": "uspace.city",
+        "images": {
+            "thumb": "thumb--ulock",
+            "full": "ulock.jpg"
+        },
+        "responsibilities": [
+            {
+                "title": "Cross Platform APP (IoT)",
+                "points": [
+                    "Build whole app by React Native",
+                    "State management with mobx",
+                    "Fastlane, Firebase integration",
+                    "Optimised animation and user interaction",
+                ]
+            },
+        ]
     },
-    "responsibilities": [
-        {
-            "title": "",
-            "points": []
-        }
-    ]
-  },
+    {
+        "title": "",
+        "description": "",
+        "url": "",
+        "images": {
+            "thumb": "thumb--empty",
+            "full": "empty.jpg"
+        },
+        "responsibilities": [
+            {
+                "title": "",
+                "points": []
+            }
+        ]
+    },
+    {
+        "title": "BibleBYT",
+        "description": "A bible study app for Banner Church",
+        "url": "apps.apple.com/tw/app/%E9%9D%88%E4%BF%AE%E5%BF%83/id1376386601",
+        "images": {
+            "thumb": "thumb--biblebyt",
+            "full": "biblebyt.jpg"
+        },
+        "responsibilities": [
+            {
+                "title": "Cross platform APP",
+                "points": [
+                    "Build with React-Native",
+                    "State management with mobx",
+                    "Realm DB",
+                    "Fastlane, Firebase integration",
+                    "Optimised animation and user interaction",
+                ]
+            }
+        ]
+    },
+    {
+        "title": "",
+        "description": "",
+        "url": "",
+        "images": {
+            "thumb": "thumb--empty",
+            "full": "empty.jpg"
+        },
+        "responsibilities": [
+            {
+                "title": "",
+                "points": []
+            }
+        ]
+    },
+    {
+        "title": "十年",
+        "description": "「十年」 is an APP specially designed for Banner Church's 'BE STRONG' Camp happening this summer 2019. Use this App to help you have a great time during the “Be-Strong Camp”. 十年 also contains resources and clues to help you along the way.",
+        "url": "apps.apple.com/tw/app/%E5%8D%81%E5%B9%B4/id1470231721",
+        "images": {
+            "thumb": "thumb--tenyear",
+            "full": "tenyear.jpg"
+        },
+        "responsibilities": [
+            {
+                "title": "Cross platform APP",
+                "points": [
+                    "FrontEnd Build with React-Native",
+                    "BackEnd build with Strapi CMS and deploy on Heroku",
+                    "Fastlane, Firebase integration",
+                    "Optimised animation and user interaction",
+                ]
+            }
+        ]
+    },
+    {
+        "title": "",
+        "description": "",
+        "url": "",
+        "images": {
+            "thumb": "thumb--empty",
+            "full": "empty.jpg"
+        },
+        "responsibilities": [
+            {
+                "title": "",
+                "points": []
+            }
+        ]
+    },
+    {
+        "title": "TakeOver",
+        "description": "An Australian migration questions and answers website that required an online portal to communicate with customers in Australia and abroad.",
+        "url": "apps.apple.com/tw/app/byt-level-up/id1252631432",
+        "images": {
+            "thumb": "thumb--takeover",
+            "full": "takeover.jpg"
+        },
+        "responsibilities": [
+            {
+                "title": "Cross platform APP",
+                "points": [
+                    "FrontEnd Build with React-Native",
+                    "BackEnd build with Node.js server and deploy on AWS",
+                    "Fastlane, Firebase integration",
+                    "Optimised animation and user interaction",
+                ]
+            }
+        ]
+    },
+    {
+        "title": "",
+        "description": "",
+        "url": "",
+        "images": {
+            "thumb": "thumb--empty",
+            "full": "empty.jpg"
+        },
+        "responsibilities": [
+            {
+                "title": "",
+                "points": []
+            }
+        ]
+    },
 ];
