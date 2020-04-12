@@ -364,6 +364,7 @@ const PROTFOLIO = [
                 "points": [
                     "Build whole app by React Native",
                     "Conntect with the smart speaker through UDP protocol",
+                    "Animation with Lottie",
                     "State management with redux-saga",
                     "Fastlane, Firebase integration",
                     "Optimised animation and user interaction",
@@ -415,6 +416,7 @@ const PROTFOLIO = [
                 "points": [
                     "Build whole app by React Native",
                     "State management with mobx",
+                    "Animation with Lottie",
                     "Fastlane, Firebase integration",
                     "Optimised animation and user interaction",
                 ]
@@ -435,6 +437,7 @@ const PROTFOLIO = [
                 "points": [
                     "Build whole app by React Native",
                     "State management with mobx",
+                    "Animation with Lottie",
                     "Fastlane, Firebase integration",
                     "Optimised animation and user interaction",
                 ]
@@ -470,6 +473,7 @@ const PROTFOLIO = [
                 "points": [
                     "Build with React-Native",
                     "State management with mobx",
+                    "Animation with Lottie",
                     "Realm DB",
                     "Fastlane, Firebase integration",
                     "Optimised animation and user interaction",
@@ -505,6 +509,7 @@ const PROTFOLIO = [
                 "title": "Cross platform APP",
                 "points": [
                     "FrontEnd Build with React-Native",
+                    "Animation with Lottie",
                     "BackEnd build with Strapi CMS and deploy on Heroku",
                     "Fastlane, Firebase integration",
                     "Optimised animation and user interaction",
