@@ -12,7 +12,7 @@ $(window).load(function () {
 $(function () {
   FastClick.attach(document.body)
 
-  function isMobile () {
+  function isMobile() {
     var userAgent = navigator.userAgent
 
     return (
@@ -54,7 +54,7 @@ $(function () {
   Mustache.parse(itemTemplate)
   Mustache.parse(modalTemplate)
 
-  function createPortfolio () {
+  function createPortfolio() {
     for (var i = 0; i < portfolioData.length; i++) {
       portfolioData[i].id = i
       portfolioData[i].empty = portfolioData[i].title == '' ? true : false
@@ -80,7 +80,7 @@ $(function () {
     event.stopPropagation()
   })
 
-  function showModal (id) {
+  function showModal(id) {
     var output = Mustache.render(modalTemplate, portfolioData[id])
 
     $portfolioModal.html(output).addClass('modal--active')
@@ -94,14 +94,14 @@ $(function () {
     $portfolioModal.addClass('modal--loaded')
   })
 
-  function closeModal () {
+  function closeModal() {
     $('.modal')
       .removeClass('modal--active')
       .removeClass('modal--loaded')
   }
 
   // canvas check
-  function supports_canvas () {
+  function supports_canvas() {
     return !!document.createElement('canvas').getContext
   }
 
@@ -125,7 +125,7 @@ $(function () {
     $('a.internal').on('click', scrollTo)
     $('a.internal').on('touchstart', scrollTo)
 
-    function scrollTo (event) {
+    function scrollTo(event) {
       var $link = $(this)
 
       $('.menu').removeClass('menu--active')
@@ -155,7 +155,7 @@ $(function () {
   }, 100)
 })
 
-function initScrollpath (element) {
+function initScrollpath(element) {
   // draw path
   $.fn
     .scrollPath('getPath')
@@ -217,7 +217,7 @@ function initScrollpath (element) {
   })
 }
 
-function disableoverflow () {
+function disableoverflow() {
   var target = event.target
 
   var currentPosition = ''
@@ -418,7 +418,7 @@ const PROTFOLIO = [
   {
     title: 'Dramates App',
     description: 'Watch movies & TV shows just like Netflix',
-    url: 'www.dramates.com',
+    url: 'mocha.dramates.com/drama',
     images: {
       thumb: 'thumb--drama',
       full: 'drama.jpg'
@@ -750,7 +750,7 @@ const PROTFOLIO_MOBILE = [
   {
     title: 'Dramates App',
     description: 'Watch movies & TV shows just like Netflix',
-    url: 'www.dramates.com',
+    url: 'mocha.dramates.com/drama',
     images: {
       thumb: 'thumb--drama',
       full: 'drama.jpg'
