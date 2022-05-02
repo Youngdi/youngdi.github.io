@@ -304,23 +304,23 @@ const PROTFOLIO = [
     ]
   },
   {
-    title: 'Qfinder',
+    title: 'U-POWER',
     description:
-      'Qfinder allows you to quickly find and easily access all of the QNAP NAS on the same LAN.',
-    url: 'www.qnap.com/zh-tw/utilities/essentials',
+      'U-POWER allows you to quickly find all of the charging stations to charge your electric car.',
+    url: 'apps.apple.com/tw/app/u-power/id1612379206',
     images: {
-      thumb: 'thumb--qfinder',
-      full: 'qfinder.jpg'
+      thumb: 'thumb--upower',
+      full: 'upower.jpg'
     },
     responsibilities: [
       {
-        title: 'Chrome Extension',
+        title: 'Cross Platform APP (IoT)',
         points: [
-          'UDP Bonjour and MDNS',
-          'Front end development',
-          'UI Logic and interface',
-          'Optimised animation and user interaction',
-          'Dockerize'
+          'Build with React-Native',
+          'State management with mobx',
+          'Animation with Lottie',
+          'Fastlane, Firebase integration',
+          'Optimised animation and user interaction'
         ]
       }
     ]
